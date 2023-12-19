@@ -8,10 +8,11 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "Customers", path: "/" },
-    { title: "Careers", path: "/" },
-    { title: "Guides", path: "/" },
-    { title: "Partners", path: "/" },
+    { title: "Thông tin khóa học", path: "/" },
+    { title: "Giảng viên", path: "/" },
+    { title: "Agenda", path: "/" },
+    { title: "Review", path: "/" },
+    { title: "FAQ", path: "/" },
   ];
 
   return (
@@ -65,7 +66,7 @@ export default function Navbar() {
             <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => {
                 return (
-                  <li key={idx} className="text-gray-600 hover:text-indigo-600">
+                  <li key={idx} className="text-gray-600 hover:text-primary">
                     <a href={item.path}>{item.title}</a>
                   </li>
                 );
@@ -73,7 +74,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="hidden md:inline-block">
-            <Button>Get Started</Button>
+            <Button variant="secondary">Đăng ký ngay</Button>
           </div>
         </div>
       </div>

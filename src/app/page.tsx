@@ -4,7 +4,7 @@ import StickyBar from "./_components/sticky-bar";
 
 export default function HomePage() {
   return (
-    <div className="space-y-20 py-20">
+    <div className="space-y-20 sm:py-16 py-10">
       <Hero />
       <Benefits />
       <StickyBar />

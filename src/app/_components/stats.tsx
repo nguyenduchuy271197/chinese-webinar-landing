@@ -22,9 +22,7 @@ export default function Stats() {
       <ul className="inline-grid grid-cols-2 items-center justify-center gap-x-12 gap-y-10 sm:flex sm:flex-wrap md:gap-x-24">
         {stats.map((item, idx) => (
           <li key={idx} className="text-center">
-            <h3 className="text-4xl text-[#C61F05] font-semibold">
-              {item.data}
-            </h3>
+            <h3 className="text-4xl text-primary font-bold">{item.data}</h3>
             <p className="mt-3 text-gray-600 font-medium">{item.title}</p>
           </li>
         ))}

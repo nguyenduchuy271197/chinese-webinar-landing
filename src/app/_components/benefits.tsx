@@ -99,11 +99,8 @@ export default function Benefits() {
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((item, idx) => (
-              <li
-                key={idx}
-                className="bg-white space-y-3 p-4 border rounded-lg"
-              >
-                <div className="text-indigo-600 pb-3">{item.icon}</div>
+              <li key={idx} className="bg-white space-y-3 p-4 border">
+                <div className="text-primary pb-3">{item.icon}</div>
                 <h4 className="text-lg text-gray-800 font-semibold">
                   {item.title}
                 </h4>

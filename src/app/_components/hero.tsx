@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="space-y-6">
             <div className="space-y-4">
               {/* Title */}
-              <h3 className="lg:text-6xl/[1.2] md:text-5xl font-bold text-3xl">
+              <h3 className="lg:text-6xl/[1.2] md:text-5xl font-bold text-4xl">
                 Lorem
                 <HighlightWord>ipsum</HighlightWord>
                 dolor sit amet
@@ -30,18 +30,18 @@ export default function Hero() {
                   150.000 VNĐ
                 </p>
                 {/* Tag giảm */}
-                <p className="bg-[#C61F05] text-[#fff] rounded-full px-2 py-1 md:px-3 md:py-2 text-xs">
+                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-2 text-xs">
                   Đăng ký sớm giảm 30%
                 </p>
               </div>
 
               <div className="flex justify-between">
                 {/* Giá mới */}
-                <h3 className="md:text-5xl lg:text-4xl text-2xl text-[#F4B205] font-bold">
+                <h3 className="md:text-5xl lg:text-4xl text-2xl text-secondary font-bold">
                   100.000 VNĐ
                 </h3>
                 {/* % giảm */}
-                <div className=" text-[#C61F05] font-bold flex items-end">
+                <div className=" text-primary font-bold flex items-end">
                   <ArrowDown className="mb-1 w-4 h-4 md:w-6 md:h-6" />
                   <span className="md:text-4xl text-2xl">30</span>
                   <span className="text-base md:text-xl">%</span>
@@ -50,24 +50,26 @@ export default function Hero() {
             </div>
 
             <div>
-              <Button className="w-full">Đăng ký ngay</Button>
+              <Button variant="secondary" size="lg" className="w-full">
+                Đăng ký ngay
+              </Button>
             </div>
 
             <div className="flex justify-between gap-5">
               <div>
-                <div className="flex w-[75px] h-[15px] mb-1 text-[#C61F05]">
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
+                <div className="flex w-[75px] h-[15px] mb-1 text-primary">
+                  <Star className="fill-primary" />
+                  <Star className="fill-primary" />
+                  <Star className="fill-primary" />
+                  <Star className="fill-primary" />
+                  <Star className="fill-primary" />
                 </div>
                 <p className="text-xs">
                   4.7 - dựa trên 1,000+ đánh giá từ học viên
                 </p>
               </div>
 
-              <Button size="sm">
+              <Button variant="outline" size="sm">
                 Chia sẻ <Share className="ml-2" />
               </Button>
             </div>

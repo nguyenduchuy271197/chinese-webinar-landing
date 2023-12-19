@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function StickyBar() {
   return (
-    <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block">
+    <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block bg-white">
       <div className="container">
         <div className="flex justify-between items-center px-8 py-2 border">
           <div className="flex items-center gap-2">
