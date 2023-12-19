@@ -20,9 +20,7 @@ export default function Story() {
     <section>
       <div className="max-w-screen-lg px-8 mx-auto">
         <div className="space-y-12">
-          <h3 className="text-center text-4xl font-bold">
-            All of it can change today.
-          </h3>
+          <h3 className="text-center text-4xl font-bold">Story</h3>
 
           <div className="grid sm:grid-cols-2 gap-8">
             <div className="border px-8 bg-[#FFE4DF]">
