@@ -129,12 +129,12 @@ export default function Targets() {
       <div className="container">
         <div className="gap-16 md:px-8 flex flex-col-reverse lg:flex-row py-20 items-start">
           <div className="w-full lg:w-[30%] shrink-0 grid grid-cols-2 gap-4">
-            <div className="aspect-[1/1] bg-slate-200"></div>
-            <div className="aspect-[1/1] bg-slate-200"></div>
-            <div className="aspect-[1/1] bg-slate-200"></div>
-            <div className="aspect-[1/1] bg-slate-200"></div>
-            <div className="aspect-[1/1] bg-slate-200"></div>
-            <div className="aspect-[1/1] bg-slate-200"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
           </div>
           <div className="space-y-12">
             <div className="relative">

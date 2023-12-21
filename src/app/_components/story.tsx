@@ -30,7 +30,7 @@ export default function Story() {
           </Heading>
 
           <div className="grid sm:grid-cols-2 gap-8">
-            <div className="border px-8 bg-red-100">
+            <div className="border px-8 bg-red-100 rounded-md">
               <div className="text-center py-4">
                 <h4 className="uppercase font-bold text-xl">Before</h4>
               </div>
@@ -49,7 +49,7 @@ export default function Story() {
               </div>
             </div>
 
-            <div className="border px-8 bg-yellow-100">
+            <div className="border px-8 bg-yellow-100 rounded-md">
               <div className="text-center py-4">
                 <h4 className="uppercase font-bold text-xl">After</h4>
               </div>

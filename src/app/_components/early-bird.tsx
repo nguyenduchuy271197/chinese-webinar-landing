@@ -83,7 +83,7 @@ export default function EarlyBird() {
               {features.map((item, idx) => (
                 <li
                   key={idx}
-                  className="bg-primary text-primary-foreground space-y-3 p-8"
+                  className="bg-primary text-primary-foreground space-y-3 p-8 rounded-md"
                 >
                   <div className="text-primary bg-primary-foreground inline-flex w-20 h-20 justify-center items-center">
                     {item.icon}
