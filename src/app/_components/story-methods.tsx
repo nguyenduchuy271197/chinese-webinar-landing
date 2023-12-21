@@ -109,17 +109,17 @@ export default function StoryMethods() {
               <div className="relative">
                 <div className="grid grid-cols-2 text-center">
                   <div>
-                    <p className="uppercase bg-[#FFEFC4] text-[#F4B205] py-5 rounded-l-2xl font-bold">
+                    <p className="uppercase bg-yellow-100 text-yellow-400 py-5 rounded-l-2xl font-bold">
                       Chọn
                     </p>
                   </div>
                   <div>
-                    <p className="uppercase bg-[#FFE4DF] text-[#C61F05] py-5 rounded-r-2xl font-bold">
+                    <p className="uppercase bg-red-100 text-red-500 py-5 rounded-r-2xl font-bold">
                       Không chọn
                     </p>
                   </div>
                 </div>
-                <div className="bg-[#000] uppercase text-[#fff] rounded-full absolute left-1/2 top-1/2 font-bold -translate-x-1/2 -translate-y-1/2 h-28 w-28 sm:flex items-center justify-center hidden">
+                <div className="bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 font-bold -translate-x-1/2 -translate-y-1/2 h-28 w-28 sm:flex items-center justify-center hidden">
                   <p>Hay</p>
                 </div>
               </div>

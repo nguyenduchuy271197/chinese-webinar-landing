@@ -1,22 +1,24 @@
+import HighlightWord from "@/components/highlight-word";
+import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
+
 export default function Reviews() {
   return (
     <section>
       <div className="container">
         <div className="space-y-16">
-          <div className="relative max-w-xl text-center mx-auto">
-            <div>
-              <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                Reviews
-              </h3>
-              <p className="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                congue, nisl eget molestie varius, enim ex faucibus purus.
-              </p>
-            </div>
-          </div>
+          <Heading>
+            <HeadingTitle>
+              <HighlightWord>Reviews</HighlightWord>
+            </HeadingTitle>
+            <HeadingDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              congue, nisl eget molestie varius, enim ex faucibus purus.
+            </HeadingDescription>
+          </Heading>
+
           <div className="md:columns-2 lg:columns-3 gap-6 p-4 sm:p-1">
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -46,7 +48,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -77,7 +79,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -108,7 +110,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -140,7 +142,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -172,7 +174,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -205,7 +207,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
@@ -238,7 +240,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className="animate-in zoom-in duration-200">
-              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-sky-400 transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
+              <div className="ring-1 rounded-lg flex flex-col space-y-2 p-4 break-inside-avoid mb-6 bg-white hover:ring-2 ring-gray-300 hover:ring-primary transform duration-200 hover:shadow-sky-200 hover:shadow-md z-0 relative">
                 <div className="flex flex-col break-inside-avoid-page z-0 relative">
                   <div className="flex justify-between">
                     <div className="flex space-x-6">

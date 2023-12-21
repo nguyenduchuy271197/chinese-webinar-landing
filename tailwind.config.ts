@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,6 +17,39 @@ module.exports = {
     },
     extend: {
       colors: {
+        red: {
+          100: "#FFE4DF",
+          200: "#FB9C8C",
+          300: "#FA6149",
+          400: "#F22808",
+          500: "#CE2105",
+          600: "#AC1C04",
+          700: "#8A1702",
+          800: "#691002",
+          900: "#440A03",
+        },
+        yellow: {
+          100: "#FFEFC4",
+          200: "#FBDD8D",
+          300: "#FDC946",
+          400: "#F4B205",
+          500: "#D09903",
+          600: "#AF7F02",
+          700: "#8D6604",
+          800: "#684C01",
+          900: "#463303",
+        },
+        neutral: {
+          100: "#F8F9FA",
+          200: "#E9ECEF",
+          300: "#DEE2E6",
+          400: "#CED4DA",
+          500: "#ADB5BD",
+          600: "#6C757D",
+          700: "#495057",
+          800: "#343A40",
+          900: "#212529",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,4 +106,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
