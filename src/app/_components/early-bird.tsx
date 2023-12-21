@@ -1,4 +1,5 @@
 import HighlightWord from "@/components/highlight-word";
+import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
 
 export default function EarlyBird() {
   const features = [
@@ -67,17 +68,15 @@ export default function EarlyBird() {
     <section>
       <div className="container">
         <div className="space-y-16">
-          <div className="relative max-w-xl text-center mx-auto">
-            <div>
-              <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                <HighlightWord>Early Bird</HighlightWord>
-              </h3>
-              <p className="mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                congue, nisl eget molestie varius, enim ex faucibus purus.
-              </p>
-            </div>
-          </div>
+          <Heading>
+            <HeadingTitle>
+              <HighlightWord>Early Bird</HighlightWord>
+            </HeadingTitle>
+            <HeadingDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              congue, nisl eget molestie varius, enim ex faucibus purus.
+            </HeadingDescription>
+          </Heading>
           <div className="relative">
             <ul className="grid gap-8 md:grid-cols-3">
               {features.map((item, idx) => (

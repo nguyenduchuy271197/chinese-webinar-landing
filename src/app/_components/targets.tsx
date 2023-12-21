@@ -1,5 +1,5 @@
 import HighlightWord from "@/components/highlight-word";
-
+import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
 export default function Targets() {
   const features = [
     {
@@ -137,17 +137,15 @@ export default function Targets() {
             <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
           </div>
           <div className="space-y-12">
-            <div className="relative">
-              <div>
-                <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                  Khoá học này<HighlightWord>dành cho bạn</HighlightWord>
-                </h3>
-                <p className="mt-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  congue, nisl eget molestie varius, enim ex faucibus purus.
-                </p>
-              </div>
-            </div>
+            <Heading align="left">
+              <HeadingTitle>
+                Khoá học này<HighlightWord>dành cho bạn</HighlightWord>
+              </HeadingTitle>
+              <HeadingDescription>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                congue, nisl eget molestie varius, enim ex faucibus purus.
+              </HeadingDescription>
+            </Heading>
             <div>
               <ul className="grid sm:grid-cols-2 gap-8">
                 {features.map((item, idx) => (
