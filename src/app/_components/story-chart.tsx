@@ -6,7 +6,7 @@ export default function StoryChart() {
   return (
     <section className="bg-[#F8F9FA]">
       <div className="max-w-screen-lg px-8 mx-auto">
-        <div className="grid grid-cols-2 gap-8 py-20">
+        <div className="sm:grid sm:grid-cols-2 flex flex-col-reverse gap-20 sm:gap-8 py-20">
           <div>
             <div className="relative">
               <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-[#fff] left-16 -top-10">
