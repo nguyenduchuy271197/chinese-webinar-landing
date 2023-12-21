@@ -5,82 +5,202 @@ export default function Benefits() {
   const features = [
     {
       icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
+            d="M6.25 10L13.75 17.5"
+            stroke="black"
+            strokeWidth={3}
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+          />
+          <path
+            d="M5 17.5L12.5 10L15 6.25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.5 6.25H17.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8.75 2.5H10"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M27.5 27.5L21.25 15L15 27.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M17.5 22.5H25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
-      title: "Benefit 1",
+      title: "TOP cách diễn đạt phổ biến mà người bản xứ ưa dùng",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
     },
     {
       icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
+            d="M6.25 10L13.75 17.5"
+            stroke="black"
+            strokeWidth={3}
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+          />
+          <path
+            d="M5 17.5L12.5 10L15 6.25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.5 6.25H17.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8.75 2.5H10"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M27.5 27.5L21.25 15L15 27.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M17.5 22.5H25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
-      title: "Benefit 2",
+      title: "Nói tiếng Trung thành THẠO, nhanh chóng",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
     },
     {
       icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
+            d="M6.25 10L13.75 17.5"
+            stroke="black"
+            strokeWidth={3}
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+          />
+          <path
+            d="M5 17.5L12.5 10L15 6.25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.5 6.25H17.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8.75 2.5H10"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M27.5 27.5L21.25 15L15 27.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M17.5 22.5H25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
-      title: "Benefit 3",
+      title: "Phương pháp phù hợp với người ít thời gian rảnh",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
     },
     {
       icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
+            d="M6.25 10L13.75 17.5"
+            stroke="black"
+            strokeWidth={3}
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
+          />
+          <path
+            d="M5 17.5L12.5 10L15 6.25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.5 6.25H17.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8.75 2.5H10"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M27.5 27.5L21.25 15L15 27.5"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M17.5 22.5H25"
+            stroke="black"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
-      title: "Benefit 4",
+      title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
     },
   ];
@@ -91,13 +211,10 @@ export default function Benefits() {
         <div className="space-y-12 py-20">
           <Heading align="left">
             <HeadingTitle>
-              <HighlightWord>Benefits</HighlightWord>
-              Lorem, ipsum.
+              Vì sao học theo
+              <HighlightWord>giáo trình</HighlightWord>
+              mà vẫn chưa nói được tiếng Trung?
             </HeadingTitle>
-            <HeadingDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
-            </HeadingDescription>
           </Heading>
 
           <div className="relative mt-12">
@@ -107,8 +224,10 @@ export default function Benefits() {
                   key={idx}
                   className="bg-white space-y-3 p-4 border rounded-md"
                 >
-                  <div className="text-primary pb-3">{item.icon}</div>
-                  <h4 className="text-lg text-gray-800 font-semibold">
+                  <div className="text-primary p-3 rounded-md w-16 h-16 bg-red-100">
+                    {item.icon}
+                  </div>
+                  <h4 className="text-lg text-gray-800 font-semibold uppercase">
                     {item.title}
                   </h4>
                   <p>{item.desc}</p>
