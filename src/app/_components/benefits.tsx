@@ -86,31 +86,33 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="text-gray-600">
+    <section className="bg-neutral-100">
       <div className="container">
-        <Heading align="left">
-          <HeadingTitle>
-            <HighlightWord>Benefits</HighlightWord>
-            Lorem, ipsum.
-          </HeadingTitle>
-          <HeadingDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            congue, nisl eget molestie varius, enim ex faucibus purus.
-          </HeadingDescription>
-        </Heading>
+        <div className="space-y-12 py-20">
+          <Heading align="left">
+            <HeadingTitle>
+              <HighlightWord>Benefits</HighlightWord>
+              Lorem, ipsum.
+            </HeadingTitle>
+            <HeadingDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              congue, nisl eget molestie varius, enim ex faucibus purus.
+            </HeadingDescription>
+          </Heading>
 
-        <div className="relative mt-12">
-          <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {features.map((item, idx) => (
-              <li key={idx} className="bg-white space-y-3 p-4 border">
-                <div className="text-primary pb-3">{item.icon}</div>
-                <h4 className="text-lg text-gray-800 font-semibold">
-                  {item.title}
-                </h4>
-                <p>{item.desc}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="relative">
+            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {features.map((item, idx) => (
+                <li key={idx} className="bg-white space-y-3 p-4 border">
+                  <div className="text-primary pb-3">{item.icon}</div>
+                  <h4 className="text-lg text-gray-800 font-semibold">
+                    {item.title}
+                  </h4>
+                  <p>{item.desc}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
