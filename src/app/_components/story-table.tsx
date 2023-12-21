@@ -27,7 +27,7 @@ export default function StoryTable() {
   return (
     <section>
       <div className="max-w-screen-lg px-8 mx-auto">
-        <div className="grid grid-cols-[400px_1fr] gap-10">
+        <div className="grid sm:grid-cols-[400px_1fr] gap-10">
           <div>
             <h3 className="text-4xl mb-6">
               Lorem<HighlightWord>ipsum</HighlightWord>dolor sit amet.
