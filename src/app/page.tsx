@@ -6,6 +6,7 @@ import StoryTable from "./_components/story-table";
 import StoryChart from "./_components/story-chart";
 import StoryMethods from "./_components/story-methods";
 import Reviews from "./_components/reviews";
+import EarlyBird from "./_components/early-bird";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <StoryChart />
       <StoryMethods />
       <Reviews />
+      <EarlyBird />
       <StickyBar />
     </div>
   );

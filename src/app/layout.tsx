@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-[500vh] bg-background font-sans antialiased",
+          "min-h-[2000vh] bg-background font-sans antialiased",
           inter.className
         )}
       >
