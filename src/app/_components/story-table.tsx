@@ -42,7 +42,7 @@ export default function StoryTable() {
 
           {/* Table */}
           <div className="">
-            <table className="w-full border table-auto text-sm text-left mb-6 shadow-sm rounded-lg overflow-x-auto">
+            <table className="w-full border table-auto text-sm text-left mb-6 shadow-sm overflow-x-auto">
               <thead className="bg-gray-50 text-gray-600 font-medium border-b">
                 <tr>
                   <th className="py-3 px-6">Username</th>
