@@ -1,3 +1,6 @@
+import HighlightWord from "@/components/highlight-word";
+import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
+
 export default function Benefits() {
   const features = [
     {
@@ -85,17 +88,17 @@ export default function Benefits() {
   return (
     <section className="text-gray-600">
       <div className="container">
-        <div className="relative max-w-2xl">
-          <div>
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-              Benefits
-            </h3>
-            <p className="mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
-            </p>
-          </div>
-        </div>
+        <Heading align="left">
+          <HeadingTitle>
+            <HighlightWord>Benefits</HighlightWord>
+            Lorem, ipsum.
+          </HeadingTitle>
+          <HeadingDescription>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            congue, nisl eget molestie varius, enim ex faucibus purus.
+          </HeadingDescription>
+        </Heading>
+
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((item, idx) => (

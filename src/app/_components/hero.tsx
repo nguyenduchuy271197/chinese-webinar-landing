@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Share, Star } from "lucide-react";
 import Stats from "./stats";
 import HighlightWord from "@/components/highlight-word";
+import ShareButton from "./share/share-button";
 
 export default function Hero() {
   return (
@@ -50,28 +51,26 @@ export default function Hero() {
             </div>
 
             <div>
-              <Button variant="secondary" size="lg" className="w-full">
+              <Button variant="secondary" size="lg">
                 Đăng ký ngay
               </Button>
             </div>
 
             <div className="flex justify-between gap-5">
-              <div>
-                <div className="flex w-[75px] h-[15px] mb-1 text-primary">
-                  <Star className="fill-primary" />
-                  <Star className="fill-primary" />
-                  <Star className="fill-primary" />
-                  <Star className="fill-primary" />
-                  <Star className="fill-primary" />
+              <div className="space-y-1">
+                <div className="flex items-center text-primary">
+                  <Star className="fill-primary w-4 h-4" />
+                  <Star className="fill-primary w-4 h-4" />
+                  <Star className="fill-primary w-4 h-4" />
+                  <Star className="fill-primary w-4 h-4" />
+                  <Star className="fill-primary w-4 h-4" />
                 </div>
                 <p className="text-xs">
-                  4.7 - dựa trên 1,000+ đánh giá từ học viên
+                  <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên
                 </p>
               </div>
 
-              <Button variant="outline" size="sm">
-                Chia sẻ <Share className="ml-2" />
-              </Button>
+              <ShareButton />
             </div>
           </div>
 

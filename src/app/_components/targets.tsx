@@ -1,3 +1,5 @@
+import HighlightWord from "@/components/highlight-word";
+
 export default function Targets() {
   const features = [
     {
@@ -138,7 +140,7 @@ export default function Targets() {
             <div className="relative">
               <div>
                 <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                  Khoá học này dành cho bạn
+                  Khoá học này<HighlightWord>dành cho bạn</HighlightWord>
                 </h3>
                 <p className="mt-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

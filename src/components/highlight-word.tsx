@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export default function HighlightWord({ children }: { children: ReactNode }) {
   return (
-    <span className="relative mx-4 text-primary inline-flex">
+    <span className="relative mx-[0.2em] text-primary inline-flex">
       {children}
       <svg
         viewBox="0 0 188 16"

@@ -1,3 +1,5 @@
+import HighlightWord from "@/components/highlight-word";
+
 export default function EarlyBird() {
   const features = [
     {
@@ -68,7 +70,7 @@ export default function EarlyBird() {
           <div className="relative max-w-xl text-center mx-auto">
             <div>
               <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                Early Bird
+                <HighlightWord>Early Bird</HighlightWord>
               </h3>
               <p className="mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

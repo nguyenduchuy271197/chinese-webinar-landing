@@ -4,12 +4,12 @@ import { Briefcase } from "lucide-react";
 
 export default function StoryChart() {
   return (
-    <section className="bg-[#F8F9FA]">
+    <section className="bg-neutral-100">
       <div className="max-w-screen-lg px-8 mx-auto">
         <div className="sm:grid sm:grid-cols-2 flex flex-col-reverse gap-20 sm:gap-8 py-20">
           <div>
             <div className="relative">
-              <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-[#fff] left-16 -top-10">
+              <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-white left-16 -top-10">
                 <Briefcase />
                 <p>500K người</p>
               </div>
@@ -113,7 +113,7 @@ export default function StoryChart() {
                   />
                 </svg>
               </div>
-              <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-[#fff] right-2 -bottom-14">
+              <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-white right-2 -bottom-14">
                 <Briefcase />
                 <p>500K người</p>
               </div>
@@ -131,9 +131,7 @@ export default function StoryChart() {
               incidunt. Nihil, distinctio!
             </p>
 
-            <Button variant="secondary" size="sm">
-              Nhận việc ngay
-            </Button>
+            <Button variant="secondary">Nhận việc ngay</Button>
           </div>
         </div>
       </div>
