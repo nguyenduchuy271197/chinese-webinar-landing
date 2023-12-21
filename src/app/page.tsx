@@ -8,6 +8,7 @@ import StoryMethods from "./_components/story-methods";
 import Reviews from "./_components/reviews";
 import EarlyBird from "./_components/early-bird";
 import Targets from "./_components/targets";
+import FAQ from "./_components/faq";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Reviews />
       <EarlyBird />
       <Targets />
+      <FAQ />
       <StickyBar />
     </div>
   );
