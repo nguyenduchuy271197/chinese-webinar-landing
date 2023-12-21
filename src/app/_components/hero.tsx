@@ -75,7 +75,7 @@ export default function Hero() {
           </div>
 
           <div>
-            <div className="aspect-[16/9] bg-slate-100"></div>
+            <div className="aspect-[16/9] bg-slate-100 rounded-md"></div>
           </div>
         </div>
 
