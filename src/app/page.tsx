@@ -5,6 +5,7 @@ import Story from "./_components/story";
 import StoryTable from "./_components/story-table";
 import StoryChart from "./_components/story-chart";
 import StoryMethods from "./_components/story-methods";
+import Reviews from "./_components/reviews";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <StoryTable />
       <StoryChart />
       <StoryMethods />
+      <Reviews />
       <StickyBar />
     </div>
   );
