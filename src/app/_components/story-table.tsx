@@ -4,24 +4,29 @@ import { Button } from "@/components/ui/button";
 export default function StoryTable() {
   const tableItems = [
     {
-      name: "Liam James",
-      salary: "$100K",
+      job: "Kế toán",
+      salary: "150.000 - 250.000",
+      average: "Cell text",
     },
     {
-      name: "Olivia Emma",
-      salary: "$90K",
+      job: "Phân tích tài chính",
+      salary: "150.000 - 350.000",
+      average: "Cell text",
     },
     {
-      name: "William Benjamin",
-      salary: "$80K",
+      job: "Thiết kế HTML",
+      salary: "180.000 - 350.000",
+      average: "Cell text",
     },
     {
-      name: "Henry Theodore",
-      salary: "$120K",
+      job: "Nhà phát triển Java",
+      salary: "240.000 - 550.000",
+      average: "Cell text",
     },
     {
-      name: "Amelia Elijah",
-      salary: "$75K",
+      job: "Giám đốc tiếp thị",
+      salary: "300.000 - 800.000",
+      average: "Cell text",
     },
   ];
   return (
@@ -44,17 +49,23 @@ export default function StoryTable() {
           <div className="">
             <table className="w-full border table-auto text-sm text-left mb-6 shadow-sm overflow-x-auto">
               <thead className="bg-gray-50 text-gray-600 font-medium border-b">
-                <tr>
-                  <th className="py-3 px-6">Username</th>
-                  <th className="py-3 px-6">Salary</th>
+                <tr className="uppercase">
+                  <th className="py-3 px-6">Nghề nghiệp</th>
+                  <th className="py-3 px-6">
+                    Mức lương trung bình hằng năm (CNV)
+                  </th>
+                  <th className="py-3 px-6">Mức lương trung bình</th>
                 </tr>
               </thead>
               <tbody className="text-gray-600 divide-y">
                 {tableItems.map((item, idx) => (
                   <tr key={idx}>
-                    <td className="px-6 py-4 whitespace-nowrap">{item.name}</td>
+                    <td className="px-6 py-4 whitespace-nowrap">{item.job}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       {item.salary}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {item.average}
                     </td>
                   </tr>
                 ))}

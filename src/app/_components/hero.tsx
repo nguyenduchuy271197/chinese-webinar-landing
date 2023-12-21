@@ -13,14 +13,13 @@ export default function Hero() {
             <div className="space-y-4">
               {/* Title */}
               <h3 className="lg:text-6xl/[1.2] md:text-5xl font-bold text-4xl">
-                Lorem
-                <HighlightWord>ipsum</HighlightWord>
-                dolor sit amet
+                <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung sau 3
+                giờ
               </h3>
               {/* Description */}
               <p className="text-sm lg:text-base">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quibusdam in amet ipsa odit, sequi assumenda?
+                Vì sao học theo giáo trình nhiều tháng mà vẫn chưa nói được
+                tiếng Trung tự nhiên như tiếng Việt?
               </p>
             </div>
 
