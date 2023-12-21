@@ -9,6 +9,7 @@ import Reviews from "./_components/reviews";
 import EarlyBird from "./_components/early-bird";
 import Targets from "./_components/targets";
 import FAQ from "./_components/faq";
+import Speaker from "./_components/speaker";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       <EarlyBird />
       <Targets />
       <FAQ />
+      <Speaker />
       <StickyBar />
     </div>
   );
