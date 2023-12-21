@@ -1,20 +1,20 @@
 export default function Stats() {
   const stats = [
     {
-      data: "90K",
-      title: "Active users",
+      data: "200+",
+      title: "Lớp học",
     },
     {
-      data: "120K",
-      title: "Total Sales",
+      data: "3.000+",
+      title: "Học viên",
     },
     {
-      data: "25+",
-      title: "Countries",
+      data: "133.1K",
+      title: "Followers",
     },
     {
-      data: "2.5M+",
-      title: "Total revenue",
+      data: "1.8TR",
+      title: "Likes",
     },
   ];
   return (
@@ -23,7 +23,9 @@ export default function Stats() {
         {stats.map((item, idx) => (
           <li key={idx} className="text-center">
             <h3 className="text-4xl text-primary font-bold">{item.data}</h3>
-            <p className="mt-3 text-gray-600 font-medium">{item.title}</p>
+            <p className="mt-3 text-gray-600 font-medium uppercase">
+              {item.title}
+            </p>
           </li>
         ))}
       </ul>
