@@ -11,6 +11,7 @@ import Targets from "./_components/targets";
 import FAQ from "./_components/faq";
 import Speaker from "./_components/speaker";
 import Agenda from "./_components/agenda";
+import CTA from "./_components/cta";
 
 export default function HomePage() {
   return (
@@ -24,9 +25,10 @@ export default function HomePage() {
       <Reviews />
       <EarlyBird />
       <Targets />
-      <FAQ />
       <Speaker />
       <Agenda />
+      <FAQ />
+      <CTA />
       <StickyBar />
     </div>
   );
