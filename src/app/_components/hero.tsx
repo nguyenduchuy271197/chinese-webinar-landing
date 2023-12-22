@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Share, Star } from "lucide-react";
+import { ArrowDown, Star } from "lucide-react";
 import Stats from "./stats";
 import HighlightWord from "@/components/highlight-word";
 import ShareButton from "./share/share-button";
