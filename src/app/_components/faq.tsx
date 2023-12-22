@@ -11,10 +11,10 @@ export default function FAQ() {
   return (
     <section>
       <div className="container">
-        <div className="space-y-16">
+        <div className="space-y-16 sm:pt-28">
           <Heading>
             <HeadingTitle>
-              <HighlightWord>Reviews</HighlightWord>
+              <HighlightWord>FAQ</HighlightWord>
             </HeadingTitle>
             <HeadingDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

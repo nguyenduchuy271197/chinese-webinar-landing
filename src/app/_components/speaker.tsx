@@ -10,7 +10,7 @@ export default function Speaker() {
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-[1fr_2fr] gap-16">
             <div className="rounded-full bg-auto relative aspect-[1/1] overflow-hidden">
               <Image
-                src="/Cô Chang.png"
+                src="/speaker.jpg"
                 alt="Speaker"
                 fill
                 className="w-full h-full"
@@ -25,7 +25,7 @@ export default function Speaker() {
                 <div className="flex gap-8 justify-between items-center">
                   <div className="text-white font-bold">
                     <h3 className="text-4xl">
-                      Cô<HighlightWord>Thu Trang</HighlightWord>
+                      Cô<HighlightWord>ABC</HighlightWord>
                     </h3>
                   </div>
 
@@ -126,8 +126,8 @@ export default function Speaker() {
                     <Check className="text-white w-4 h-4" />
                   </div>
                   <p>
-                    NCS Thạc Sĩ Ngôn Ngữ Trung Đại Học Ngôn Ngữ Bắc Kinh Trung
-                    Quốc
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis, molestiae.
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
@@ -135,23 +135,8 @@ export default function Speaker() {
                     <Check className="text-white w-4 h-4" />
                   </div>
                   <p>
-                    Tốt Nghiệp Cử Nhân Đại Học Khoa Học Công Nghệ Sơn Đông -
-                    Trung Quốc
-                  </p>
-                </li>
-                <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
-                  </div>
-                  <p>HSK6 - HSKK Cao Cấp</p>
-                </li>
-                <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
-                  </div>
-                  <p>
-                    Chứng chỉ Hán Ngữ Nâng Cao tại Đại Học KHCN Quế Lâm Trung
-                    Quốc
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis, molestiae.
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
@@ -159,7 +144,26 @@ export default function Speaker() {
                     <Check className="text-white w-4 h-4" />
                   </div>
                   <p>
-                    Đã có 10 năm kinh nghiệm dạy Tiếng Trung cho mọi đối tượng
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis, molestiae.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4 text-white text-xl">
+                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white w-4 h-4" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis, molestiae.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4 text-white text-xl">
+                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white w-4 h-4" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis, molestiae.
                   </p>
                 </li>
               </ul>
@@ -175,13 +179,11 @@ export default function Speaker() {
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
                   <div>
                     <span className="text-black">Luyện thi</span>
-                    <br />
-                    <span className="text-primary">HSK-HSKK</span>
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
                   <div>
-                    <span className="text-black">Dạy Tiếng Trung</span>
+                    <span className="text-black">Dạy</span>
                     <br />
                     <span className="text-black">Trẻ Em</span>
                   </div>

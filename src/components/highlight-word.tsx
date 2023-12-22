@@ -5,13 +5,14 @@ export default function HighlightWord({ children }: { children: ReactNode }) {
     <span className="relative mx-[0.2em] text-primary inline-flex">
       {children}
       <svg
-        viewBox="0 0 188 16"
+        viewBox="0 0 396 17"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-[92%] left-0 stroke-secondary"
       >
         <path
-          d="M2 14.4126C12.3462 11.6536 23.6925 11.495 34.2934 9.34035C54.9672 5.13835 76.7597 4.18101 97.7811 3.00003C127.149 1.35016 156.711 2.23919 186.123 2.23919"
+          d="M2 15C92.8023 6.70527 278.836 -4.11519 394 6.25321"
+          stroke="#F4B205"
           strokeWidth={3}
           strokeLinecap="round"
         />
