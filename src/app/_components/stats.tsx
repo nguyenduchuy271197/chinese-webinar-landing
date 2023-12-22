@@ -1,19 +1,25 @@
+import StatCard from "./share/stat-card";
+
 export default function Stats() {
   const stats = [
     {
-      data: "200+",
+      value: 200,
+      postfix: "+",
       title: "Lớp học",
     },
     {
-      data: "3.000+",
+      value: 3000,
+      postfix: "+",
       title: "Học viên",
     },
     {
-      data: "133.1K",
+      value: 133.1,
+      postfix: "K",
       title: "Followers",
     },
     {
-      data: "1.8TR",
+      value: 1.8,
+      postfix: "TR",
       title: "Likes",
     },
   ];
@@ -21,12 +27,7 @@ export default function Stats() {
     <div className="flex justify-center sm:block">
       <ul className="inline-grid grid-cols-2 items-center justify-center gap-x-12 gap-y-10 sm:flex sm:flex-wrap md:gap-x-24">
         {stats.map((item, idx) => (
-          <li key={idx} className="text-center">
-            <h3 className="text-4xl text-primary font-bold">{item.data}</h3>
-            <p className="mt-3 text-gray-600 font-medium uppercase">
-              {item.title}
-            </p>
-          </li>
+          <StatCard key={idx} {...item} />
         ))}
       </ul>
     </div>
