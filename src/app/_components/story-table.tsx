@@ -35,13 +35,11 @@ export default function StoryTable() {
         <div className="grid sm:grid-cols-[400px_1fr] gap-10">
           <div>
             <h3 className="text-4xl mb-6">
-              Lorem<HighlightWord>ipsum</HighlightWord>dolor sit amet.
+              Một tháng bạn kiếm được bao nhiêu?
             </h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-              magni ducimus temporibus unde ea quasi natus odio, repellendus
-              veniam aliquam blanditiis quos iste quae, in porro tempore iure
-              impedit dolorum?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
             </p>
           </div>
 
@@ -77,6 +75,11 @@ export default function StoryTable() {
               Mức lương trung bình tại Thượng Hải 2021
             </h3>
           </div>
+        </div>
+        <div className="flex justify-center items-center pt-6">
+          <Button variant="secondary" size="lg">
+            Nhận ngay công việc lương 80 triệu
+          </Button>
         </div>
       </div>
     </section>

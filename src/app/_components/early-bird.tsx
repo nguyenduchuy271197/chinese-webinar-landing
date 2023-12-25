@@ -7,17 +7,17 @@ export default function EarlyBird() {
     {
       src: "/Early Bird 1.png",
       title: "30 phút tư vấn 1:1 với chuyên gia",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      desc: "Các giảng viên, chuyên gia và đội ngũ mentor sẽ giúp bạn giải đáp các khúc mắc",
     },
     {
       src: "/Early Bird 2.png",
       title: "Bộ template Notion quản lý việc học siêu dễ",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      desc: "Kho tài liệu đồ sộ với hơn 800+ template, video tutorial, tài nguyên tham khảo,...",
     },
     {
       src: "/Early Bird 3.png",
       title: "Tài liệu tiếng Trung tự ôn luyện tại HSK tại nhà",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      desc: "Bộ tài liệu chi tiết, phục vụ tất tần tật nhu cầu của người học tiếng Trung",
     },
   ];
   return (
@@ -26,11 +26,10 @@ export default function EarlyBird() {
         <div className="space-y-16">
           <Heading>
             <HeadingTitle>
-              <HighlightWord>Early Bird</HighlightWord>
+              <HighlightWord>Early Bird</HighlightWord>Benefits
             </HeadingTitle>
             <HeadingDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
+              Những quyền lợi các bạn sẽ được nhận khi đăng ký tham dự sớm
             </HeadingDescription>
           </Heading>
           <div className="relative">

@@ -1,20 +1,18 @@
 import HighlightWord from "@/components/highlight-word";
 import { Check, X } from "lucide-react";
-import { Heading, HeadingTitle } from "./share/heading";
+import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
 
 export default function Story() {
   const story = {
     before: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
+      "Cày sấp mặt từ sáng tới tối, cuối tuần OT, lương tháng 10 triệu, trả nợ xong thì ăn mì tôm",
+      "Thuê trọ với nhiều người, mỗi tháng tiền phòng điện nước, xăng xe, ăn uống, mỹ phẩm, gửi về cho gia đình, abc bay hết tháng lương",
+      "Thất nghiệp mấy tháng muốn đờ người, kiếm đủ thứ để làm, part-time, phiên dịch thời vụ, start-up, đi du học",
     ],
     after: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi quia repellat omnis nisi? Sapiente.",
+      "Ngồi máy lạnh chill chill, việc tới làm vèo vèo, sáng ăn đồ healthy, chiều order trà sữa, tối cafe networking, cuối tháng ting ting 15 triệu là ít",
+      "Thuê hẳn 1 căn chung cư riêng, có đầy đủ tiện ích, đi đi về về không cần nhìn mặt ai",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     ],
   };
 
@@ -25,14 +23,16 @@ export default function Story() {
           <h3 className="text-center text-4xl font-bold"></h3>
           <Heading>
             <HeadingTitle>
-              All of it can change<HighlightWord>today</HighlightWord>
+              Chuyện gì cũng sẽ có...<HighlightWord>cách</HighlightWord>
             </HeadingTitle>
+
+            <HeadingDescription>Lorem ipsum dolor sit amet.</HeadingDescription>
           </Heading>
 
           <div className="grid sm:grid-cols-2 gap-8">
             <div className="border px-8 bg-red-100 rounded-md">
               <div className="text-center py-4">
-                <h4 className="uppercase font-bold text-xl">Before</h4>
+                <h4 className="uppercase font-bold text-xl">Trước đây 🥹</h4>
               </div>
 
               <hr className="border-primary" />
@@ -51,7 +51,7 @@ export default function Story() {
 
             <div className="border px-8 bg-yellow-100 rounded-md">
               <div className="text-center py-4">
-                <h4 className="uppercase font-bold text-xl">After</h4>
+                <h4 className="uppercase font-bold text-xl">sau này 😌</h4>
               </div>
 
               <hr className="border-secondary" />

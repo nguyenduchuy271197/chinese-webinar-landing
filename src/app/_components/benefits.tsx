@@ -50,8 +50,8 @@ export default function Benefits() {
           />
         </svg>
       ),
-      title: "TOP cách diễn đạt phổ biến mà người bản xứ ưa dùng",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Học cách diễn đạt phổ biến mà người bản xứ ưa dùng",
+      desc: "Học đúng những thứ cần học, áp dụng thực tế, hiệu quả ngay lập tức, không lan man.",
     },
     {
       icon: (
@@ -100,8 +100,8 @@ export default function Benefits() {
           />
         </svg>
       ),
-      title: "Nói tiếng Trung thành THẠO, nhanh chóng",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Học với chuyên gia, người thật, việc thật",
+      desc: "Nói tiếng Trung thành thạo, phản xạ nhanh nhạy, từ vựng đúng ngữ cảnh.",
     },
     {
       icon: (
@@ -151,7 +151,7 @@ export default function Benefits() {
         </svg>
       ),
       title: "Phương pháp phù hợp với người ít thời gian rảnh",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      desc: "Người bận rộn đến mấy cũng có thể học được, không bị bỏ cuộc giữa chừng.",
     },
     {
       icon: (
@@ -200,8 +200,8 @@ export default function Benefits() {
           />
         </svg>
       ),
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Bỏ cách học rập khuôn, cứng nhắc, không hiệu quả",
+      desc: "Người bận rộn đến mấy cũng có thể học được, không bị bỏ cuộc giữa chừng.",
     },
   ];
 
@@ -211,9 +211,9 @@ export default function Benefits() {
         <div className="space-y-12 py-20">
           <Heading align="left">
             <HeadingTitle>
-              Vì sao học theo
-              <HighlightWord>giáo trình</HighlightWord>
-              mà vẫn chưa nói được tiếng Trung?
+              Nếu chỉ với
+              <HighlightWord>3 giờ</HighlightWord>
+              học tiếng Trung, có bị xem là học vẹt?
             </HeadingTitle>
           </Heading>
 

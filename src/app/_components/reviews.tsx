@@ -8,11 +8,10 @@ export default function Reviews() {
         <div className="space-y-16">
           <Heading>
             <HeadingTitle>
-              <HighlightWord>Reviews</HighlightWord>
+              Sau<HighlightWord>khoá học</HighlightWord>các học viên nói 流畅度?
             </HeadingTitle>
             <HeadingDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
+              Review và kết quả của các bạn học viên sau một thời gian học
             </HeadingDescription>
           </Heading>
 

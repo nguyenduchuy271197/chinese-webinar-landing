@@ -19,8 +19,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người có nhiều công việc, ít có thời gian rảnh",
+      desc: "Hết việc này lại tới việc khác nhưng với phương pháp học ở LIKELION, thời gian luôn luôn đủ",
     },
     {
       icon: (
@@ -39,8 +39,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người muốn đi du học trung quốc, đài loan, hongkong,...",
+      desc: "Và các nước có tiếng Trung là ngôn ngữ phổ biến",
     },
     {
       icon: (
@@ -59,8 +59,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người thích đi du lịch, trải nghiệm văn hoá",
+      desc: "Thỏa thích đi các nước có cộng đồng nói tiếng Trung sau khoá học",
     },
     {
       icon: (
@@ -79,8 +79,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người cần ôn thi đại học, lấy chứng chỉ hsk, hskk",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       icon: (
@@ -99,8 +99,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người tìm cách học thông minh, hiệu quả cao",
+      desc: "Đem lại hiệu quả tới 90% với phương pháp học 3H.",
     },
     {
       icon: (
@@ -119,8 +119,8 @@ export default function Targets() {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.",
+      title: "Người muốn giao tiếp trôi chảy cho nhiều mục đích khác",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
 
@@ -139,7 +139,7 @@ export default function Targets() {
           <div className="space-y-12">
             <Heading align="left">
               <HeadingTitle>
-                Khoá học này<HighlightWord>dành cho bạn</HighlightWord>
+                Khoá học này<HighlightWord>là cho bạn đó</HighlightWord>
               </HeadingTitle>
               <HeadingDescription>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

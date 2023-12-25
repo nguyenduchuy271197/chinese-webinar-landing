@@ -10,7 +10,7 @@ export default function StoryChart() {
           <div>
             <div className="relative">
               <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-white left-16 -top-10">
-                <Briefcase />
+                <Briefcase className="text-[#AC1C04]" />
                 <p>500K người</p>
               </div>
               <div>
@@ -114,21 +114,21 @@ export default function StoryChart() {
                 </svg>
               </div>
               <div className="flex shadow-sm rounded-lg px-4 py-4 gap-2 absolute bg-white right-2 -bottom-14">
-                <Briefcase />
+                <Briefcase className="text-[#AC1C04]" />
                 <p>500K người</p>
               </div>
             </div>
           </div>
           <div>
             <h3 className="text-4xl font-bold mb-6">
-              Lorem<HighlightWord>ipsum</HighlightWord>dolor sit amet.
+              Xu hướng<HighlightWord>tìm việc</HighlightWord>mà bạn đang bỏ lỡ
             </h3>
 
             <p className="mb-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              velit a impedit earum quidem placeat nostrum autem unde aut! Hic
-              dignissimos, aperiam iure repellendus deleniti quasi quaerat
-              incidunt. Nihil, distinctio!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con
             </p>
 
             <Button variant="secondary">Nhận việc ngay</Button>
