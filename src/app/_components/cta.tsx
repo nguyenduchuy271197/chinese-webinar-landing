@@ -8,12 +8,11 @@ export default function CTA() {
         <div className="bg-primary space-y-8 text-white rounded-md mx-auto py-10 px-20">
           <div className="space-y-4">
             <h3 className="text-4xl sm:text-5xl font-bold">
-              Lorem<HighlightWord>ipsum</HighlightWord>dolor sit amet.
+              Bắt đầu<HighlightWord>hành trình</HighlightWord>ngừng học vẹt!
             </h3>
 
             <p className="text-base sm:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              cumque.
+              Sau 3h, cuộc sống của bạn sẽ hoàn toàn thay đổi.
             </p>
           </div>
           <Button variant="secondary" size="lg">

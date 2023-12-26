@@ -133,8 +133,11 @@ export default function FAQ() {
             <div className="pt-10">
               <p className="font-bold">Bạn vẫn thắc mắc...</p>
               <span>
-                Hãy liên hệ với chúng tôi qua
-                <HighlightWord>Messenger</HighlightWord>.
+                Hãy liên hệ với chúng tôi qua{" "}
+                <a href="#" className="text-primary font-semibold">
+                  Messenger
+                </a>
+                .
               </span>
             </div>
           </div>

@@ -3,6 +3,7 @@ import { ArrowDown, Star } from "lucide-react";
 import Stats from "./stats";
 import HighlightWord from "@/components/highlight-word";
 import ShareButton from "./share/share-button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -51,7 +52,7 @@ export default function Hero() {
 
             <div>
               <Button variant="secondary" size="lg">
-                Đăng ký ngay
+                <Link href="/thanh-toan">Đăng ký ngay</Link>
               </Button>
             </div>
 

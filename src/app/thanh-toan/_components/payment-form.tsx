@@ -204,8 +204,12 @@ export default function PaymentForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={form.formState.isSubmitting}>
-          Submit
+        <Button
+          type="submit"
+          disabled={form.formState.isSubmitting}
+          className="uppercase"
+        >
+          Hoàn tất thanh toán
         </Button>
       </form>
     </Form>

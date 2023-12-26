@@ -1,37 +1,32 @@
 import HighlightWord from "@/components/highlight-word";
-import { CalendarClock } from "lucide-react";
+import { CalendarClock, Cast } from "lucide-react";
 import AgendaCards from "./share/agenda-cards";
 
 const curriculum = [
   {
-    time: "2:00 PM",
-    title: "Lorem ipsum dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolor quos suscipit rerum blanditiis quisquam eum, dolorem odit facilis natus, possimus minus quo nam! Debitis cum quod molestias ad.",
+    time: "18:00 PM",
+    title: "Giới thiệu",
+    description: "Giới thiệu về giảng viên và nội dung buổi học",
   },
   {
-    time: "2:00 PM",
-    title: "Lorem ipsum dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolor quos suscipit rerum blanditiis quisquam eum, dolorem odit facilis natus, possimus minus quo nam! Debitis cum quod molestias ad.",
+    time: "18:30 PM",
+    title: "Kiến thức",
+    description: "Cung cấp các kiến thức nền tảng và phương pháp học",
   },
   {
-    time: "2:00 PM",
-    title: "Lorem ipsum dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolor quos suscipit rerum blanditiis quisquam eum, dolorem odit facilis natus, possimus minus quo nam! Debitis cum quod molestias ad.",
+    time: "19:30 PM",
+    title: "Thực hành",
+    description: "Thực hành sử dụng các cách diễn đạt phổ biến",
   },
   {
-    time: "2:00 PM",
-    title: "Lorem ipsum dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolor quos suscipit rerum blanditiis quisquam eum, dolorem odit facilis natus, possimus minus quo nam! Debitis cum quod molestias ad.",
+    time: "20:00 PM",
+    title: "Tương tác",
+    description: "Luyện tập tương tác với các tình huống cụ thể",
   },
   {
-    time: "2:00 PM",
-    title: "Lorem ipsum dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dolor quos suscipit rerum blanditiis quisquam eum, dolorem odit facilis natus, possimus minus quo nam! Debitis cum quod molestias ad.",
+    time: "20:30 PM",
+    title: "Q&A",
+    description: "Giải đáp các thắc mắc và chia sẻ cảm nhận sau buổi học",
   },
 ];
 
@@ -43,21 +38,21 @@ export default function Agenda() {
           <div>
             <div className="space-y-8 max-w-lg sticky top-20">
               <h3 className="font-bold text-4xl">
-                Lorem<HighlightWord>ipsum</HighlightWord>dolor sit amet.
+                Lộ trình<HighlightWord>3h</HighlightWord>
+                <p className="text-primary">Ngừng học vẹt</p>
               </h3>
 
-              <span className="flex gap-2 font-medium">
-                <CalendarClock />
-                02:00 PM - 06:00 PM, 22/01/2024
-              </span>
+              <div className="space-y-4">
+                <span className="flex gap-2 font-medium">
+                  <CalendarClock />
+                  02:00 PM - 06:00 PM, 22/01/2024
+                </span>
 
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita delectus iusto inventore voluptatem! Fugit odit
-                doloremque sequi maiores, sint quibusdam! Consectetur ducimus
-                aperiam vitae maiores fuga, sint reprehenderit! Quibusdam,
-                harum!
-              </p>
+                <span className="flex gap-2 font-medium">
+                  <Cast />
+                  Online qua Google Meet
+                </span>
+              </div>
             </div>
           </div>
 
