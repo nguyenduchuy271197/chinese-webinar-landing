@@ -17,6 +17,7 @@ export async function POST(request: Request) {
           },
         ],
       },
+
       Phone: {
         rich_text: [
           {
@@ -26,9 +27,21 @@ export async function POST(request: Request) {
           },
         ],
       },
+
       Email: {
         email: user.email,
       },
+
+      URL: {
+        rich_text: [
+          {
+            text: {
+              content: user.url,
+            },
+          },
+        ],
+      },
+
       Code: {
         rich_text: [
           {

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRightCircle } from "lucide-react";
 
 const buttonVariants = cva(
-  "cursor-pointer font-bold font-sans transition-all px-4 py-2 rounded-full border border-transparent flex items-center text-base [&>svg]:w-8 [&>svg]:transition-transform [&>svg]:duration-300 [&>svg]:ease-in-out [&>svg]:hover:transform uppercase",
+  "cursor-pointer font-bold font-sans transition-all px-4 py-2 rounded-full border border-transparent flex items-center text-base [&>svg]:w-8 [&>svg]:transition-transform [&>svg]:duration-300 [&>svg]:ease-in-out [&>svg]:hover:transform uppercase disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {

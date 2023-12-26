@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "./_components/footer";
 import { Toaster } from "@/components/ui/sonner";
 import Providers from "@/components/providers";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +26,12 @@ export default function RootLayout({
         className={cn("bg-background font-sans antialiased", inter.className)}
       >
         <Providers>
-          <Navbar />
-          {children}
-          <Footer />
-          <Toaster position="top-center" />
+          <EdgeStoreProvider>
+            <Navbar />
+            {children}
+            <Footer />
+            <Toaster position="top-center" />
+          </EdgeStoreProvider>
         </Providers>
       </body>
     </html>

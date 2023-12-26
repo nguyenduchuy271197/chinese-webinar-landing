@@ -17,10 +17,21 @@ import axios from "axios";
 import { Input } from "@/components/ui/input";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
+import { SingleImageDropzone } from "@/components/ui/dropzone";
+import { useEdgeStore } from "@/lib/edgestore";
+import { Loader2 } from "lucide-react";
 
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
 );
+
+const MAX_FILE_SIZE = 50000;
+const ACCEPTED_IMAGE_TYPES = [
+  "image/jpeg",
+  "image/jpg",
+  "image/png",
+  "image/webp",
+];
 
 const paymentFormSchema = z.object({
   name: z.string().min(2, {
@@ -39,16 +50,25 @@ const paymentFormSchema = z.object({
     })
     .email("Phải là địa chỉ email có thật"),
 
-  code: z
-    .string()
-    .min(2, {
-      message: "Check",
-    })
-    .optional(),
+  image: z
+    .any()
+    .refine((file) => !!file, "Image is required.")
+    .refine((file) => file.size <= MAX_FILE_SIZE, `Max file size is 5MB.`)
+    .refine(
+      (file) => ACCEPTED_IMAGE_TYPES.includes(file.type),
+      ".jpg, .jpeg, .png and .webp files are accepted."
+    ),
+
+  code: z.string().optional(),
 });
 
+type PaymentForm = z.infer<typeof paymentFormSchema>;
+interface Payment extends Omit<PaymentForm, "image"> {
+  url: string;
+}
+
 export default function PaymentForm() {
-  const form = useForm<z.infer<typeof paymentFormSchema>>({
+  const form = useForm<PaymentForm>({
     resolver: zodResolver(paymentFormSchema),
     defaultValues: {
       name: "",
@@ -58,8 +78,10 @@ export default function PaymentForm() {
     },
   });
 
+  const { edgestore } = useEdgeStore();
+
   const { mutate: mutateSubmit, isPending: isSubmitting } = useMutation({
-    mutationFn: (paymentInfo: z.infer<typeof paymentFormSchema>) =>
+    mutationFn: (paymentInfo: Payment) =>
       axios.post("/api/payment", paymentInfo),
     onMutate: () => {
       toast.success("Bạn đã đăng ký thành công!");
@@ -67,8 +89,24 @@ export default function PaymentForm() {
     },
   });
 
-  async function onSubmit(data: z.infer<typeof paymentFormSchema>) {
-    mutateSubmit(data);
+  async function onSubmit(data: PaymentForm) {
+    if (data.image) {
+      const res = await edgestore.publicFiles.upload({
+        file: data.image,
+        onProgressChange: (progress) => {
+          console.log(progress);
+        },
+      });
+      const fileUrl = res.url;
+
+      mutateSubmit({
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        url: fileUrl,
+        code: data.code,
+      });
+    }
   }
   return (
     <Form {...form}>
@@ -83,7 +121,11 @@ export default function PaymentForm() {
             <FormItem>
               <FormLabel>Họ và tên</FormLabel>
               <FormControl>
-                <Input placeholder="Họ và tên" {...field} />
+                <Input
+                  placeholder="Họ và tên"
+                  {...field}
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -97,7 +139,11 @@ export default function PaymentForm() {
             <FormItem>
               <FormLabel>SĐT</FormLabel>
               <FormControl>
-                <Input placeholder="0xx xxx xx xx" {...field} />
+                <Input
+                  placeholder="0xx xxx xx xx"
+                  {...field}
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -111,7 +157,30 @@ export default function PaymentForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Email" {...field} />
+                <Input
+                  placeholder="Email"
+                  {...field}
+                  disabled={form.formState.isSubmitting}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="image"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Ảnh chụp màn hình chuyển khoản</FormLabel>
+              <FormControl>
+                <SingleImageDropzone
+                  width={200}
+                  height={200}
+                  {...field}
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -125,14 +194,18 @@ export default function PaymentForm() {
             <FormItem>
               <FormLabel>Mã giới thiệu</FormLabel>
               <FormControl>
-                <Input placeholder="Mã giới thiệu" {...field} />
+                <Input
+                  placeholder="Mã giới thiệu"
+                  {...field}
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit" className="mx-auto">
-          Hoàn tất thanh toán
+        <Button type="submit" disabled={form.formState.isSubmitting}>
+          Submit
         </Button>
       </form>
     </Form>
