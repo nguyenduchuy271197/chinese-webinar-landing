@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import Footer from "./_components/footer";
+import { Toaster } from "@/components/ui/sonner";
+import Providers from "@/components/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +24,12 @@ export default function RootLayout({
       <body
         className={cn("bg-background font-sans antialiased", inter.className)}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+          <Toaster position="top-center" />
+        </Providers>
       </body>
     </html>
   );
