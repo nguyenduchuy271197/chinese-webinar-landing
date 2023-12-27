@@ -1,6 +1,30 @@
+"use client";
 import { Button } from "@/components/ui/button";
+import CountDown, { CountdownRenderProps } from "react-countdown";
 
 export default function StickyBar() {
+  const renderer = ({
+    days,
+    hours,
+    minutes,
+    seconds,
+    completed,
+  }: CountdownRenderProps) => {
+    if (completed) {
+      // Render a completed state
+      return <div>Countdown completed!</div>;
+    } else {
+      // Render a countdown
+      return (
+        <span>
+          {days} ngày {hours}:{minutes}:{seconds}
+        </span>
+      );
+    }
+  };
+
+  const targetDate = new Date(Date.UTC(2024, 0, 1, -7, 0, 0));
+  const timestamp = targetDate.getTime();
   return (
     <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block">
       <div className="container">
@@ -14,7 +38,9 @@ export default function StickyBar() {
 
             <div className="text-center">
               <p className="font-semibold">Thời hạn đăng ký còn</p>
-              <p className="text-primary font-semibold">1 ngày 12:19:45</p>
+              <p className="text-primary font-semibold">
+                <CountDown date={timestamp} renderer={renderer} />
+              </p>
             </div>
           </div>
 
