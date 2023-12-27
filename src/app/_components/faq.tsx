@@ -41,8 +41,10 @@ export default function FAQ() {
                   khi đã học?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It comes with default styles that matches the other
-                  components&apos; aesthetic.
+                  Để duy trì và nâng cao trình độ Nói Tiếng Trung, hãy thường
+                  xuyên luyện tập, tham gia các nhóm thảo luận trên mạng xã hội,
+                  xem phim hoặc đọc sách bằng Tiếng Trung để giữ vững phong độ
+                  nói của bạn.
                 </AccordionContent>
               </AccordionItem>
 
@@ -51,8 +53,11 @@ export default function FAQ() {
                   Lợi ích khi sử dụng Tiếng Trung trong môi trường kinh doanh?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Nếu công việc của bạn liên quan tới mảng kinh doanh như thu
+                  mua, bán hàng,… thì sử dụng Tiếng Trung mang lại lợi ích lớn,
+                  đặc biệt là khi giao tiếp với đối tác Trung Quốc. Điều này mở
+                  rộng cơ hội kinh doanh, tạo dựng mối quan hệ chặt chẽ và thể
+                  hiện sự tôn trọng đối với văn hóa kinh doanh của đối tác.
                 </AccordionContent>
               </AccordionItem>
 
@@ -61,8 +66,10 @@ export default function FAQ() {
                   Mất bao lâu để nói thành thạo Tiếng Trung?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Thời gian để nói thành thạo phụ thuộc vào nhiều yếu tố như mức
+                  độ cam kết, thời gian luyện tập hàng ngày và phương pháp học.
+                  Tuy nhiên, với sự nỗ lực đều đặn, đạt được trình độ giao tiếp
+                  cơ bản trong vài tháng là hoàn toàn có thể.
                 </AccordionContent>
               </AccordionItem>
 
@@ -72,8 +79,9 @@ export default function FAQ() {
                   bản xứ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Tất nhiên! Các nền tảng trao đổi ngôn ngữ phổ biến như Tandem
+                  và HelloTalk sẽ giúp kết nối bạn với những người nói Tiếng
+                  Trung bản xứ để thực hành giao tiếp.
                 </AccordionContent>
               </AccordionItem>
 
@@ -82,8 +90,10 @@ export default function FAQ() {
                   Làm thế nào để học Tiếng Trung hiệu quả?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Bạn có thể sử dụng các nền tảng tương tác như Duolingo hoặc
+                  HelloChinese, Rosetta Stone và Tandem,… Các ứng dụng này cung
+                  cấp bài học thú vị, bài tập tương tác và thực hành cách phát
+                  âm giúp cải thiện trình độ tiếng Trung của bạn nhanh chóng..
                 </AccordionContent>
               </AccordionItem>
 
@@ -93,8 +103,9 @@ export default function FAQ() {
                   Trung ở đâu?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Có, bây giờ rất nhiều trang web như BBC Languages, các kênh
+                  YouTube về tiếng Trung cung cấp các bài học miễn phí và hữu
+                  ích cho những bạn mới học và tự học Tiếng Trung.
                 </AccordionContent>
               </AccordionItem>
 
@@ -103,8 +114,10 @@ export default function FAQ() {
                   Làm sao để giữ động lực khi học Tiếng Trung?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Hãy đặt ra cho mình các mục tiêu có thể đạt được, tham gia vào
+                  các nhóm tương tác, tạo các mối quan hệ với một vài người bạn
+                  cùng học tiếng Trung hoặc đơn giản là đắm chìm trong văn hóa
+                  Trung Quốc qua phim, nhạc, ẩm thực,…
                 </AccordionContent>
               </AccordionItem>
 
@@ -113,8 +126,9 @@ export default function FAQ() {
                   Làm thế nào để vượt qua thách thức trong việc học chữ Hán?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Bạn có thể chia nhỏ chữ thành các thành phần, và sử dụng ứng
+                  dụng flashcard như Anki và thực hành viết để nâng cao khả năng
+                  nhận biết chữ Hán của bạn.
                 </AccordionContent>
               </AccordionItem>
 
@@ -124,8 +138,9 @@ export default function FAQ() {
                   Trung không?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It`&apos;`s animated by default, but you can disable it
-                  if you prefer.
+                  Các trang web như Forvo và FluentU cung cấp đoạn âm thanh và
+                  video, giúp cho phát âm và ngữ điệu của bạn trở nên hoàn thiện
+                  hơn trong Tiếng Trung.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

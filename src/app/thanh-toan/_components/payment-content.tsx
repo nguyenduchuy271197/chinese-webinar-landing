@@ -49,7 +49,7 @@ export default function PaymentContent() {
         </div>
 
         <div>
-          <Image src="/Thanh toán.png" alt="QR" width={253} height={307} />
+          <Image src="/QR.png" alt="QR" width={253} height={307} />
         </div>
       </div>
 
