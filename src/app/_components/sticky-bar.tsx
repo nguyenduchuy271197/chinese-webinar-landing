@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import CountDown, { CountdownRenderProps } from "react-countdown";
+import CountDown, { CountdownRenderProps, zeroPad } from "react-countdown";
 
 export default function StickyBar() {
   const renderer = ({
@@ -17,7 +17,8 @@ export default function StickyBar() {
       // Render a countdown
       return (
         <span>
-          {days} ngày {hours}:{minutes}:{seconds}
+          {zeroPad(days)} ngày {zeroPad(hours)}:{zeroPad(minutes)}:
+          {zeroPad(seconds)}
         </span>
       );
     }
