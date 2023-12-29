@@ -12,6 +12,7 @@ import FAQ from "./_components/faq";
 import Speaker from "./_components/speaker";
 import Agenda from "./_components/agenda";
 import CTA from "./_components/cta";
+import StoryDream from "./_components/story-dreams";
 
 export default function HomePage() {
   return (
@@ -19,7 +20,8 @@ export default function HomePage() {
       <Hero />
       <Benefits />
       <Story />
-      <StoryTable />
+      {/* <StoryTable /> */}
+      <StoryDream />
       <StoryChart />
       <StoryMethods />
       <Reviews />
