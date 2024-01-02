@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Providers from "@/components/providers";
 import { EdgeStoreProvider } from "@/lib/edgestore";
 
-const inter = Inter({ subsets: ["latin"] });
+const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Chinese Webinar",
@@ -23,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn("bg-background font-sans antialiased", inter.className)}
+        className={cn(
+          "bg-background font-sans antialiased",
+          sourceSans.className
+        )}
       >
         <Providers>
           <EdgeStoreProvider>

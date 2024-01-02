@@ -27,9 +27,9 @@ export default function Story() {
       <div className="container">
         <div className="space-y-8">
           <div className="space-y-2 text-center">
-            <h3 className="text-4xl font-bold">
+            <h2 className="text-5xl font-bold">
               Khó càng thêm khó, làm sao<HighlightWord>vượt qua</HighlightWord>
-            </h3>
+            </h2>
 
             <p>
               Câu chuyện thực tế mà các bạn đang mắc kẹt hàng ngày, nhưng đã có

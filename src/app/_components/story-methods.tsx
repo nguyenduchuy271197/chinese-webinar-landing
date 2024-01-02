@@ -28,7 +28,7 @@ export default function StoryMethods() {
   return (
     <section>
       <div className="container">
-        <div className="grid sm:grid-cols-2 gap-20 sm:gap-8">
+        <div className="grid sm:grid-cols-[4fr_3fr] gap-20 sm:gap-8">
           <div className="flex flex-col gap-10">
             <h3 className="text-4xl font-bold">
               Phương pháp học tiếng Trung<HighlightWord>hiệu quả</HighlightWord>
@@ -84,19 +84,19 @@ export default function StoryMethods() {
               </h3>
 
               <div className="relative">
-                <div className="grid grid-cols-2 text-center rounded-md overflow-hidden">
+                <div className="grid grid-cols-2 rounded-md overflow-hidden">
                   <div>
-                    <p className="uppercase bg-[#D9EDD9] text-[#008900] py-5 font-bold">
-                      Chọn
+                    <p className="uppercase bg-[#D9EDD9] text-[#008900] py-5 font-bold pl-8">
+                      Đi kiếm 45 triệu/tháng
                     </p>
                   </div>
                   <div>
-                    <p className="uppercase bg-red-100 text-red-500 py-5 font-bold">
-                      Không chọn
+                    <p className="uppercase bg-red-100 text-red-500 py-5 font-bold text-right pr-8">
+                      Nhìn người khác thành công
                     </p>
                   </div>
                 </div>
-                <div className="bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 font-bold -translate-x-1/2 -translate-y-1/2 h-28 w-28 sm:flex items-center justify-center hidden">
+                <div className="bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 font-bold -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
                   <p>Hay</p>
                 </div>
               </div>

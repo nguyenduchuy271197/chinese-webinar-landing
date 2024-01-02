@@ -4,12 +4,17 @@ import Stats from "./stats";
 import HighlightWord from "@/components/highlight-word";
 import ShareButton from "./share/share-button";
 import Link from "next/link";
+import { Heading, HeadingTitle } from "./share/heading";
 
 export default function Hero() {
   return (
     <section>
       <div className="container">
-        <div className="grid lg:grid-cols-[400px_1fr] gap-8 mb-12">
+        <div className="grid lg:grid-cols-[1fr_400px] gap-8 mb-12">
+          <div>
+            <div className="aspect-[16/9] bg-slate-100 rounded-md"></div>
+          </div>
+
           <div className="space-y-6">
             <div className="space-y-4">
               {/* Title */}
@@ -19,8 +24,8 @@ export default function Hero() {
               </h3>
               {/* Description */}
               <p className="text-sm lg:text-base">
-                3 GIỜ học TOP cách diễn đạt phổ biến nhất được người Trung Quốc
-                sử dụng
+                <b>CHỈ 3 GIỜ</b> thành thạo những cách diễn đạt phổ thông của
+                người Trung Quốc để Mở cửa 95% cơ hội kiếm $5.000/tháng.
               </p>
             </div>
 
@@ -31,8 +36,8 @@ export default function Hero() {
                   150.000 VNĐ
                 </p>
                 {/* Tag giảm */}
-                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-2 text-xs">
-                  Đăng ký sớm giảm 30%
+                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-1 text-xs">
+                  Đăng ký sớm giảm 33%
                 </p>
               </div>
 
@@ -44,15 +49,17 @@ export default function Hero() {
                 {/* % giảm */}
                 <div className=" text-primary font-bold flex items-end">
                   <ArrowDown className="mb-1 w-4 h-4 md:w-6 md:h-6" />
-                  <span className="md:text-4xl text-2xl">30</span>
+                  <span className="md:text-4xl text-2xl">33</span>
                   <span className="text-base md:text-xl">%</span>
                 </div>
               </div>
-            </div>
 
-            <div>
-              <Button variant="secondary" size="lg">
-                <Link href="/thanh-toan">Đăng ký ngay</Link>
+              <Button
+                variant="secondary"
+                size="lg"
+                className="w-full flex justify-center uppercase"
+              >
+                <Link href="/thanh-toan">Giữ vé ngay</Link>
               </Button>
             </div>
 
@@ -72,10 +79,6 @@ export default function Hero() {
 
               <ShareButton />
             </div>
-          </div>
-
-          <div>
-            <div className="aspect-[16/9] bg-slate-100 rounded-md"></div>
           </div>
         </div>
 

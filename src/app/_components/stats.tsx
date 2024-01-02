@@ -3,29 +3,27 @@ import StatCard from "./share/stat-card";
 export default function Stats() {
   const stats = [
     {
-      value: 200,
-      postfix: "+",
-      title: "Lớp học",
+      postfix: "3",
+      title: "Giờ ứng dụng phương pháp 3H",
     },
     {
-      value: 3000,
-      postfix: "+",
-      title: "Học viên",
+      postfix: "HSK",
+      title: "Chuẩn giáo trình tiếng Trung",
     },
     {
-      value: 133.1,
-      postfix: "K",
+      value: 1,
+      postfix: "TR+",
       title: "Followers",
     },
     {
-      value: 1.8,
+      value: 1268,
       postfix: "TR",
-      title: "Likes",
+      title: "Người đã đăng ký",
     },
   ];
   return (
     <div className="flex justify-center sm:block">
-      <ul className="inline-grid grid-cols-2 items-center justify-center gap-x-12 gap-y-10 sm:flex sm:flex-wrap md:gap-x-24">
+      <ul className="grid grid-cols-4 gap-20">
         {stats.map((item, idx) => (
           <StatCard key={idx} {...item} />
         ))}

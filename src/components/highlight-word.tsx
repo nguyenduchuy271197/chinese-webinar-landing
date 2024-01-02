@@ -13,7 +13,7 @@ export default function HighlightWord({ children }: { children: ReactNode }) {
         <path
           d="M2 15C92.8023 6.70527 278.836 -4.11519 394 6.25321"
           stroke="#F4B205"
-          strokeWidth={3}
+          strokeWidth={5}
           strokeLinecap="round"
         />
       </svg>

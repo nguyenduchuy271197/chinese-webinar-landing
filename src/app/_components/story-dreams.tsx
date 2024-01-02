@@ -50,7 +50,7 @@ export default function StoryDream() {
                 {salary.map((s, idx) => (
                   <div
                     key={idx}
-                    className="flex flex-col items-start space-y-2"
+                    className="flex flex-col items-center space-y-2"
                   >
                     <Image
                       src={s.url}

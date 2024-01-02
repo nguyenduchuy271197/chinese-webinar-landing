@@ -39,8 +39,8 @@ export default function EarlyBird() {
                   key={idx}
                   className="bg-primary text-primary-foreground space-y-3 p-8 rounded-md"
                 >
-                  <div className="text-primary bg-primary-foreground inline-flex w-20 h-20 justify-center items-center">
-                    <Image src={item.src} alt="" width={120} height={120} />
+                  <div className="relative text-primary bg-primary-foreground inline-flex size-[120px] justify-center items-center rounded">
+                    <Image src={item.src} alt={item.title} fill />
                   </div>
                   <h4 className="text-2xl font-semibold">{item.title}</h4>
                   <p className="text-lg">{item.desc}</p>

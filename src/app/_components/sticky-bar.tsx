@@ -33,7 +33,7 @@ export default function StickyBar() {
           <div className="flex items-center gap-2">
             <div className="bg-primary rounded-full">
               <p className="text-white mx-3 my-2 font-bold">
-                Đăng ký sớm giảm 30%
+                Đăng ký sớm giảm 33%
               </p>
             </div>
 
@@ -51,8 +51,8 @@ export default function StickyBar() {
               <h3 className="text-secondary text-4xl font-bold">100.000 VNĐ</h3>
             </div>
 
-            <div className="flex items-end">
-              <Button>Đăng ký ngay</Button>
+            <div className="flex items-end uppercase">
+              <Button variant="secondary">Giữ vé ngay</Button>
             </div>
           </div>
         </div>
