@@ -1,5 +1,6 @@
 import HighlightWord from "@/components/highlight-word";
 import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
+import Image from "next/image";
 
 export default function Reviews() {
   return (
@@ -22,9 +23,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
+                        <Image
                           src="https://randomuser.me/api/portraits/men/51.jpg"
-                          className="w-10 h-10 rounded-full"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Salvador Rose</div>
@@ -52,9 +56,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/men/34.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">John doe</div>
@@ -83,9 +90,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/men/78.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Mike tyson</div>
@@ -114,9 +124,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/women/51.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Sia</div>
@@ -146,9 +159,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/men/34.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Cheung</div>
@@ -178,9 +194,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/women/8.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Kendra</div>
@@ -211,9 +230,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/men/5.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">King</div>
@@ -244,9 +266,12 @@ export default function Reviews() {
                   <div className="flex justify-between">
                     <div className="flex space-x-6">
                       <div className="flex space-x-4 flex-shrink-0 w-52">
-                        <img
-                          src="https://randomuser.me/api/portraits/men/50.jpg"
-                          className="w-10 h-10 rounded-full"
+                        <Image
+                          src="https://randomuser.me/api/portraits/men/51.jpg"
+                          alt=""
+                          className="rounded-full"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">Yoda</div>
