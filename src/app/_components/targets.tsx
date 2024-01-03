@@ -1,126 +1,32 @@
 import HighlightWord from "@/components/highlight-word";
 import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
+import Image from "next/image";
+import { Check } from "lucide-react";
 export default function Targets() {
   const features = [
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
       title: "Người có nhiều công việc, ít có thời gian rảnh",
-      desc: "Hết việc này lại tới việc khác nhưng với phương pháp học ở LIKELION, thời gian luôn luôn đủ",
+      desc: "Hết việc này lại tới việc khác nhưng với phương pháp học ở LIKELION, thời gian luôn luôn đủ.",
     },
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
-      title: "Người muốn đi du học trung quốc, đài loan, hongkong,...",
-      desc: "Và các nước có tiếng Trung là ngôn ngữ phổ biến",
+      title: "Người muốn đi du học trung quốc, đài loan, hong kong,...",
+      desc: "Và các nước có tiếng Trung là ngôn ngữ phổ biến.",
     },
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
       title: "Người thích đi du lịch, trải nghiệm văn hoá",
-      desc: "Thỏa thích đi các nước có cộng đồng nói tiếng Trung sau khoá học",
+      desc: "Thỏa thích đi các nước có cộng đồng nói tiếng Trung sau khoá học.",
     },
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
       title: "Người cần ôn thi đại học, lấy chứng chỉ hsk, hskk",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      desc: "Mong muốn nâng cao kỹ năng và thể hiện trình độ ngôn ngữ.",
     },
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
       title: "Người tìm cách học thông minh, hiệu quả cao",
       desc: "Đem lại hiệu quả tới 90% với phương pháp học 3H.",
     },
     {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
-      ),
-      title: "Người muốn giao tiếp trôi chảy cho nhiều mục đích khác",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Người muốn giao tiếp trôi chảy cho nhiều mục đích",
+      desc: "Khoá học giúp bạn tự tin khi sử dụng tiếng Trung trong mọi tình huống.",
     },
   ];
 
@@ -129,35 +35,83 @@ export default function Targets() {
       <div className="container">
         <div className="gap-16 md:px-8 flex flex-col-reverse lg:flex-row py-20 items-start">
           <div className="w-full lg:w-[30%] shrink-0 grid grid-cols-2 gap-4">
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
-            <div className="aspect-[1/1] bg-slate-200 rounded-md"></div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 1.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 4.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 2.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 5.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 3.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
+            <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
+              <Image
+                src="/Who 6.png"
+                alt=""
+                width={160}
+                height={160}
+                className="rounded-md"
+              />
+            </div>
           </div>
           <div className="space-y-12">
-            <Heading align="left">
-              <HeadingTitle>
+            <div className="text-left space-y-2">
+              <h2 className="h3 font-bold md:h2">
                 Khoá học này<HighlightWord>là cho bạn đó</HighlightWord>
-              </HeadingTitle>
-              <HeadingDescription>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                congue, nisl eget molestie varius, enim ex faucibus purus.
-              </HeadingDescription>
-            </Heading>
+              </h2>
+              <p className="body3 md:body2-regular">
+                Thiết kế phù hợp với nhu cầu của đa dạng học viên giúp tăng 97%
+                mức độ hài lòng.
+              </p>
+            </div>
             <div>
               <ul className="grid sm:grid-cols-2 gap-8">
                 {features.map((item, idx) => (
                   <li key={idx} className="flex gap-x-4">
-                    <div className="flex-none w-12 h-12 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center">
-                      {item.icon}
+                    <div className="size-7 rounded-full bg-primary shrink-0 flex justify-center items-center mt-1">
+                      <Check className="text-white size-6" />
                     </div>
                     <div>
-                      <h4 className="text-lg text-gray-800 font-semibold">
+                      <h4 className="body2-semi md:subtitle2 text-gray-800">
                         {item.title}
                       </h4>
-                      <p className="mt-3">{item.desc}</p>
+                      <p className="mt-3 body3 md:body2-regular">{item.desc}</p>
                     </div>
                   </li>
                 ))}

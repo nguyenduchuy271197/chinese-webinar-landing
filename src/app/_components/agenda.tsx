@@ -5,22 +5,25 @@ import AgendaCards from "./share/agenda-cards";
 const curriculum = [
   {
     time: "18:00 PM",
-    title: "Giới thiệu",
-    description: "Giới thiệu về giảng viên và nội dung buổi học",
+    title: "Câu chuyện truyền cảm hứng",
+    description:
+      "Điều gì làm nên sự thành công của thầy Nguyễn Hoàng Bảo và bí kíp chưa bao giờ được bật mí",
   },
   {
-    time: "18:30 PM",
-    title: "Kiến thức",
-    description: "Cung cấp các kiến thức nền tảng và phương pháp học",
+    time: "18:45 PM",
+    title: "Mini game",
+    description:
+      "Trò chơi nhỏ giữa giờ để khuấy động bầu không khí học tập sôi nổi và năng lượng",
   },
   {
     time: "19:30 PM",
-    title: "Thực hành",
-    description: "Thực hành sử dụng các cách diễn đạt phổ biến",
+    title: "MST & cách thành thạo mọi ngôn ngữ",
+    description:
+      "Cách sử dụng MST tối ưu để đạt hiệu quả cao hơn 90% người học",
   },
   {
     time: "20:00 PM",
-    title: "Tương tác",
+    title: "Tương tác thực",
     description: "Luyện tập tương tác với các tình huống cụ thể",
   },
   {
@@ -37,18 +40,18 @@ export default function Agenda() {
         <div className="grid sm:grid-cols-2 gap-8">
           <div>
             <div className="space-y-8 max-w-lg sticky top-20">
-              <h3 className="font-bold text-4xl">
+              <h2 className="h3 font-bold md:h2">
                 Lộ trình<HighlightWord>3h</HighlightWord>
                 <p className="text-primary">Ngừng học vẹt</p>
-              </h3>
+              </h2>
 
               <div className="space-y-4">
-                <span className="flex gap-2 font-medium">
+                <span className="flex gap-2 body2-regular md:body1-regular">
                   <CalendarClock />
                   02:00 PM - 06:00 PM, 22/01/2024
                 </span>
 
-                <span className="flex gap-2 font-medium">
+                <span className="flex gap-2 body2-regular md:body1-regular">
                   <Cast />
                   Online qua Google Meet
                 </span>

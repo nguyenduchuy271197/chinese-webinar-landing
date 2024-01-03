@@ -34,10 +34,8 @@ export default function StoryDream() {
       <div className="container">
         <div className="space-y-8">
           <div className="space-y-2 max-w-3xl">
-            <h3 className="text-4xl">
-              Công thức ẵm trọn mức lương bạn luôn mơ ước
-            </h3>
-            <p className="font-light">
+            <h3 className="h3">Công thức ẵm trọn mức lương bạn luôn mơ ước</h3>
+            <p className="body3 md:body2-regular">
               Sau khi biết tiếng Trung, phần lớn học viên tìm được công việc tốt
               và thu nhập tăng lên đáng kể, thoải mái tận hưởng cuộc sống mà
               không âu lo tài chính như trước.
@@ -45,7 +43,7 @@ export default function StoryDream() {
           </div>
 
           <div>
-            <div className="grid grid-cols-[2fr_1fr] gap-8">
+            <div className="grid md:grid-cols-[2fr_1fr] gap-8">
               <div className="grid grid-cols-2 gap-10">
                 {salary.map((s, idx) => (
                   <div
@@ -60,10 +58,10 @@ export default function StoryDream() {
                       className="rounded-md mb-4"
                     />
 
-                    <h3 className="text-lg font-bold text-neutral-700">
+                    <h3 className="body2-semi md:body1-semi text-neutral-700">
                       {s.name}
                     </h3>
-                    <div className="text-sm text-neutral-600">
+                    <div className="body3 text-neutral-600">
                       <p>
                         Lương{" "}
                         <span className="line-through">
@@ -72,35 +70,40 @@ export default function StoryDream() {
                       </p>
                     </div>
                     <div className="bg-[#FFE4DF] rounded-md">
-                      <p className="font-bold text-primary text-xl px-16 py-1">
+                      <p className="subtitle2 md:subtitle1 text-primary px-16 py-1">
                         {s.new} triệu
-                        <span className="font-semibold text-lg">/ tháng</span>
+                        <span className="font-semibold body2-semi md:body1-semi">
+                          / tháng
+                        </span>
                       </p>
                     </div>
                   </div>
                 ))}
-                <div></div>
-                <div></div>
-                <div></div>
               </div>
 
               <div className="space-y-8">
                 <div>
                   <div className="flex items-end justify-around">
-                    <h3 className="line-through text-neutral-600 font-bold">
+                    <h3 className="line-through text-neutral-600 subtitle2 md:subtitle1">
                       7 triệu/ tháng
                     </h3>
-                    <p className="bg-secondary rounded-full w-[120px] h-[120px] text-center flex flex-col items-center justify-center text-white">
+                    <p className="bg-secondary rounded-full size-[120px] text-center flex flex-col items-center justify-center text-white text-base/[18px] md:text-lg/[20px]">
                       Ấn chọn
-                      <span className="uppercase font-bold">mức lương</span>
+                      <span className="uppercase font-bold text-2xl/[24px] md:text-[28px]/[28px]">
+                        mức lương
+                      </span>
                       của bạn
                     </p>
                   </div>
 
                   <div>
                     <div className="rounded-md bg-[#FFEFC4] px-4 py-2 text-center">
-                      <p className="text-secondary text-4xl font-bold">
-                        ??.000.000<span className="text-base"> VNĐ/tháng</span>
+                      <p className="text-secondary md:text-4xl text-2xl font-bold">
+                        ??.000.000
+                        <span className="body2-semi md:body1-semi">
+                          {" "}
+                          VNĐ/tháng
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -117,11 +120,14 @@ export default function StoryDream() {
                     />
                   </div>
 
-                  <h3 className="font-bold text-secondary text-4xl">
+                  <h2 className="h3 font-bold md:h2 text-secondary">
                     Chúc mừng bạn!
-                  </h3>
+                  </h2>
 
-                  <Button variant="secondary">
+                  <Button
+                    variant="secondary"
+                    className="body3 font-bold md:subtitle2"
+                  >
                     Cách nhận mức lương ?? triệu
                   </Button>
                 </div>

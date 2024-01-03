@@ -125,13 +125,13 @@ export default function Benefits() {
     <section className="bg-neutral-100">
       <div className="container">
         <div className="space-y-12 py-20">
-          <Heading align="left">
-            <HeadingTitle>
+          <div className="h3 font-bold md:h2">
+            <h2 className="max-w-[750px]">
               Nếu chỉ với
               <HighlightWord>3 giờ</HighlightWord>
               học tiếng Trung, có bị xem là học vẹt?
-            </HeadingTitle>
-          </Heading>
+            </h2>
+          </div>
 
           <div className="relative mt-12">
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -143,10 +143,10 @@ export default function Benefits() {
                   <div className="text-primary p-3 rounded-md w-16 h-16 bg-red-100">
                     {item.icon}
                   </div>
-                  <h4 className="text-lg text-gray-800 font-semibold uppercase">
+                  <h4 className="body2-semi md:subtitle2 text-gray-800 uppercase">
                     {item.title}
                   </h4>
-                  <p>{item.desc}</p>
+                  <p className="body3 md:body2-regular">{item.desc}</p>
                 </li>
               ))}
             </ul>

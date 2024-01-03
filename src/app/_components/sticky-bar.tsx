@@ -32,14 +32,14 @@ export default function StickyBar() {
         <div className="flex justify-between items-center px-8 py-2 border bg-white">
           <div className="flex items-center gap-2">
             <div className="bg-primary rounded-full">
-              <p className="text-white mx-3 my-2 font-bold">
+              <p className="text-white mx-3 my-2 subtitle2">
                 Đăng ký sớm giảm 33%
               </p>
             </div>
 
             <div className="text-center">
-              <p className="font-semibold">Thời hạn đăng ký còn</p>
-              <p className="text-primary font-semibold">
+              <p className="body2-semi">Giá vé sẽ tăng sau</p>
+              <p className="text-primary subtitle2">
                 <CountDown date={timestamp} renderer={renderer} />
               </p>
             </div>
@@ -47,11 +47,11 @@ export default function StickyBar() {
 
           <div className="flex gap-5">
             <div>
-              <p className="line-through font-light">150.000 VNĐ</p>
-              <h3 className="text-secondary text-4xl font-bold">100.000 VNĐ</h3>
+              <p className="line-through body1-regular">150.000 VNĐ</p>
+              <h3 className="text-secondary h2">100.000 VNĐ</h3>
             </div>
 
-            <div className="flex items-end uppercase">
+            <div className="flex items-end uppercase subtitle2">
               <Button variant="secondary">Giữ vé ngay</Button>
             </div>
           </div>

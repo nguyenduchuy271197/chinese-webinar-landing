@@ -17,13 +17,13 @@ export default function Stats() {
     },
     {
       value: 1268,
-      postfix: "TR",
+      // postfix: "TR",
       title: "Người đã đăng ký",
     },
   ];
   return (
     <div className="flex justify-center sm:block">
-      <ul className="grid grid-cols-4 gap-20">
+      <ul className="grid grid-cols-4">
         {stats.map((item, idx) => (
           <StatCard key={idx} {...item} />
         ))}

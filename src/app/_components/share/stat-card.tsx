@@ -7,16 +7,18 @@ export default function StatCard({
   title,
 }: {
   value?: number;
-  postfix: string;
+  postfix?: string;
   title: string;
 }) {
   return (
-    <li className="flex items-center gap-2">
-      <h3 className="text-4xl text-primary font-bold">
+    <li className="text-center md:flex items-center gap-2">
+      <h1 className="h3 font-bold md:h1 text-primary">
         {value !== undefined && <CountUp end={value} />}
         {postfix}
-      </h3>
-      <p className="text-gray-600 font-medium uppercase">{title}</p>
+      </h1>
+      <p className="text-gray-600 body2-regular md:body1-regular uppercase">
+        {title}
+      </p>
     </li>
   );
 }

@@ -78,3 +78,36 @@
     @apply font-bold;
   }
 }
+
+@layer components {
+  .h1 {
+    @apply text-6xl/[72px] tracking-[0.12em] font-bold;
+  }
+  .h2 {
+    @apply text-5xl/[64px] font-bold;
+  }
+  .h3 {
+    @apply text-[40px]/[48px];
+  }
+  .subtitle1 {
+    @apply text-[28px]/[40px] font-bold;
+  }
+  .subtitle2 {
+    @apply text-lg/[28px] font-bold;
+  }
+  .body1-semi {
+    @apply text-lg/[28px] font-semibold;
+  }
+  .body1-regular {
+    @apply text-lg/[28px] font-normal;
+  }
+  .body2-semi {
+    @apply text-base font-semibold;
+  }
+  .body2-regular {
+    @apply text-base font-normal;
+  }
+  .body3 {
+    @apply text-xs/[24px] font-normal;
+  }
+}

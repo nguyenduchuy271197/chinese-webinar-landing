@@ -4,13 +4,12 @@ import Stats from "./stats";
 import HighlightWord from "@/components/highlight-word";
 import ShareButton from "./share/share-button";
 import Link from "next/link";
-import { Heading, HeadingTitle } from "./share/heading";
 
 export default function Hero() {
   return (
     <section>
       <div className="container">
-        <div className="grid lg:grid-cols-[1fr_400px] gap-8 mb-12">
+        <div className="grid lg:grid-cols-[1fr_600px] gap-8 mb-12">
           <div>
             <div className="aspect-[16/9] bg-slate-100 rounded-md"></div>
           </div>
@@ -18,46 +17,45 @@ export default function Hero() {
           <div className="space-y-6">
             <div className="space-y-4">
               {/* Title */}
-              <h3 className="text-4xl/[1.4] font-bold">
-                <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung sau 3
-                giờ
-              </h3>
+              <h2 className="h3 font-bold md:h2">
+                <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung với
+                phương pháp MST
+              </h2>
               {/* Description */}
-              <p className="text-sm lg:text-base">
-                <b>CHỈ 3 GIỜ</b> thành thạo những cách diễn đạt phổ thông của
-                người Trung Quốc để Mở cửa 95% cơ hội kiếm $5.000/tháng.
+              <p className="body3 md:body1-regular">
+                CHỈ 3 GIỜ thành thạo tiếng Trung nhờ Phương pháp MST (Movie
+                Speak Technique) đảm bảo 96% TẠO ẤN TƯỢNG TUYỆT ĐỐI trong mọi
+                cuộc phỏng vấn xin việc.
               </p>
             </div>
 
             <div>
               <div className="flex gap-3 items-center mb-2">
                 {/* Giá giảm */}
-                <p className="line-through text-md text-sm md:text-base">
-                  150.000 VNĐ
-                </p>
+                <p className="line-through body1-regular">150.000 VNĐ</p>
                 {/* Tag giảm */}
-                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-1 text-xs">
+                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-1 body3">
                   Đăng ký sớm giảm 33%
                 </p>
               </div>
 
               <div className="flex justify-between">
                 {/* Giá mới */}
-                <h3 className="md:text-5xl lg:text-4xl text-2xl text-secondary font-bold">
+                <h3 className="h3 font-bold md:h2 text-secondary">
                   100.000 VNĐ
                 </h3>
                 {/* % giảm */}
                 <div className=" text-primary font-bold flex items-end">
-                  <ArrowDown className="mb-1 w-4 h-4 md:w-6 md:h-6" />
-                  <span className="md:text-4xl text-2xl">33</span>
-                  <span className="text-base md:text-xl">%</span>
+                  <ArrowDown className="mb-1 size-4 md:size-6" />
+                  <span className="h3 md:h2">33</span>
+                  <span className="body2-semi md:body1-semi">%</span>
                 </div>
               </div>
 
               <Button
                 variant="secondary"
                 size="lg"
-                className="w-full flex justify-center uppercase"
+                className="w-full flex justify-center uppercase body2-semi md:subtitle2"
               >
                 <Link href="/thanh-toan">Giữ vé ngay</Link>
               </Button>
@@ -72,7 +70,7 @@ export default function Hero() {
                   <Star className="fill-primary w-4 h-4" />
                   <Star className="fill-primary w-4 h-4" />
                 </div>
-                <p className="text-xs">
+                <p className="body3">
                   <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên
                 </p>
               </div>

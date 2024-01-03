@@ -1,37 +1,42 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Footer() {
   return (
     <section className="bg-neutral-900 text-white">
       <div className="container">
-        <div className="grid sm:grid-cols-3 gap-8 py-20">
+        <div className="grid md:grid-cols-3 gap-8 py-20">
           <div className="space-y-10">
-            <div className="bg-[#D9D9D9] w-[208px] h-10"></div>
+            <div className="w-[215px] h-6">
+              <Image src="/logo.svg" alt="logo" width={215} height={24} />
+            </div>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus recusandae provident doloremque rerum ipsam accusamus
-              numquam, nobis tenetur inventore molestiae quas ad nulla est
-              quaerat, consequatur neque, nesciunt tempore. Odio?
+            <p className="body3 font-semibold md:body2-semi">
+              Từ người mới bắt đầu đến người đã có kiến thức, bạn đều có thể tìm
+              được khoá học phù hợp để nâng cao kỹ năng của mình.
             </p>
           </div>
 
           <div className="flex flex-col space-y-4">
-            <h3 className="font-bold text-xl uppercase">Contact Us</h3>
+            <h3 className="body2-semi md:subtitle2 uppercase">
+              Liên hệ chúng tôi
+            </h3>
 
             <div className="flex flex-col space-y-4">
               <div>
-                <h4 className="font-bold text-lg">Phone</h4>
-                <p>(+84)123 123 123</p>
+                <h4 className="body2-semi md:body1-semi">Điện thoại</h4>
+                <p className="body3 md:body2-regular">(+84) 86 713 3779</p>
               </div>
 
               <div>
-                <h4 className="font-bold text-lg">Email</h4>
-                <p>mail@mail.com</p>
+                <h4 className="body2-semi md:body1-semi">Email</h4>
+                <p className="body3 md:body2-regular">
+                  likelion.vn@likelion.net
+                </p>
               </div>
 
               <div className="space-y-2">
-                <h4 className="font-bold text-lg">Social</h4>
+                <h4 className="body2-semi md:body1-semi">Mạng xã hội</h4>
                 <ul className="flex gap-2">
                   <li>
                     <svg
@@ -144,24 +149,25 @@ export default function Footer() {
 
           <div className="space-y-6">
             <div className="space-y-2">
-              <h3 className="uppercase font-bold text-xl">Address</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                enim totam ducimus id reprehenderit praesentium tenetur
-                voluptate eum eligendi quibusdam deleniti numquam hic,
-                voluptatem nisi sint amet in impedit reiciendis.
+              <h3 className="uppercase body2-semi md:subtitle2">Địa chỉ</h3>
+              <p className="body3 md:body2-regular">
+                Tầng 25, Tòa nhà Lim Tower
+                <br />9 - 11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP. HCM
               </p>
             </div>
 
             <div className="space-y-2">
-              <h3 className="uppercase font-bold text-xl">Policy</h3>
-              <div className="flex flex-col underline">
+              <h3 className="uppercase body2-semi md:subtitle2">Chính sách</h3>
+              <div className="flex flex-col underline text-xs md:text-base">
                 <a href="#">Term of service</a>
                 <a href="#">Privacy Policy</a>
               </div>
             </div>
           </div>
         </div>
+        <p className="body3 md:body2-regular text-neutral-500 text-center">
+          Copyright @ 2023, LIKELION Co., Ltd
+        </p>
       </div>
     </section>
   );

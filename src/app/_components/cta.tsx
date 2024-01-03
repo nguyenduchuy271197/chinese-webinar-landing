@@ -7,15 +7,19 @@ export default function CTA() {
       <div className="container">
         <div className="bg-primary space-y-8 text-white rounded-md mx-auto py-10 px-20">
           <div className="space-y-4">
-            <h3 className="text-4xl sm:text-5xl font-bold">
+            <h2 className="h3 font-bold md:h2">
               Bắt đầu<HighlightWord>hành trình</HighlightWord>ngừng học vẹt!
-            </h3>
+            </h2>
 
-            <p className="text-base sm:text-xl">
+            <p className="body3 md:body2-regular">
               Sau 3h, cuộc sống của bạn sẽ hoàn toàn thay đổi.
             </p>
           </div>
-          <Button variant="secondary" size="lg">
+          <Button
+            variant="secondary"
+            size="lg"
+            className="body2-semi md:subtitle2"
+          >
             Đăng ký ngay
           </Button>
         </div>

@@ -19,14 +19,12 @@ export default function Speaker() {
 
             <div className="space-y-8">
               <div>
-                <p className="uppercase text-xl text-white font-bold">
-                  Diễn giả
-                </p>
+                <p className="uppercase subtitle2 text-white">Giảng viên</p>
                 <div className="flex gap-8 justify-between items-center">
                   <div className="text-white font-bold">
-                    <h3 className="text-4xl">
-                      Cô<HighlightWord>ABC</HighlightWord>
-                    </h3>
+                    <h2 className="h3 font-bold md:h2">
+                      Thầy<HighlightWord>Hoàng Bảo</HighlightWord>
+                    </h2>
                   </div>
 
                   <ul className="flex gap-2 items-center">
@@ -123,76 +121,87 @@ export default function Speaker() {
               <ul className="space-y-4 mt-6">
                 <li className="flex items-center gap-4 text-white text-xl">
                   <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                    <Check className="text-white size-4" />
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Perspiciatis, molestiae.
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    Thành thạo 3 ngôn ngữ: anh, trung, thái
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
                   <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
                     <Check className="text-white w-4 h-4" />
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Perspiciatis, molestiae.
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    BIên tập viên tiếng trung tại đài truyền hình VTV
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
                   <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
                     <Check className="text-white w-4 h-4" />
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Perspiciatis, molestiae.
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    Thạc Sĩ Ngôn Ngữ Trung tại Đại Học Mở tphcm
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
                   <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
                     <Check className="text-white w-4 h-4" />
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Perspiciatis, molestiae.
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    Kinh nghiệm dịch thuật đa dạng từ sách, phim, truyện,
+                    game,...
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
                   <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
                     <Check className="text-white w-4 h-4" />
                   </div>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Perspiciatis, molestiae.
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    gần 20 năm kinh nghiệm giảng dạy Tiếng Trung cho mọi đối
+                    tượng
+                  </p>
+                </li>
+                <li className="flex items-center gap-4 text-white text-xl">
+                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white w-4 h-4" />
+                  </div>
+                  <p className="body2-semi md:subtitle2 uppercase">
+                    đam mê tìm tòi thêm các ngôn ngữ hàn, nhật, pháp, tây ban
+                    nha
                   </p>
                 </li>
               </ul>
 
               <ul className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:text-lg lg:text-xl items-center max-w-xl">
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div>
-                    <span className="text-black">Dạy giao tiếp</span>
+                  <div className="body2-semi md:body1-semi">
+                    <span className="text-black">Xây dựng nền</span>
+                    <br />
+                    <span>tảng gốc rễ</span>
+                  </div>
+                </li>
+                <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
+                  <div className="body2-semi md:body1-semi">
+                    <span className="text-black">
+                      Luyện <br />
+                      giao tiếp
+                    </span>
                     <br />
                     <span className="text-primary">1-1</span>
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div>
-                    <span className="text-black">Luyện thi</span>
+                  <div className="body2-semi md:body1-semi">
+                    <span className="text-black">Tiếng Trung</span>
+                    <br />
+                    <span className="text-black">HS-SV</span>
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div>
-                    <span className="text-black">Dạy</span>
+                  <div className="body2-semi md:body1-semi">
+                    <span className="text-black">Tiếng Trung</span>
                     <br />
-                    <span className="text-black">Trẻ Em</span>
-                  </div>
-                </li>
-                <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div>
-                    <span className="text-black">Luyện thi</span>
-                    <br />
-                    <span className="text-black">Đại Học</span>
+                    <span className="text-black">đi làm</span>
                   </div>
                 </li>
               </ul>

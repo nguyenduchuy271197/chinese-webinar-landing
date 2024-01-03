@@ -7,14 +7,14 @@ export default function Reviews() {
     <section>
       <div className="container">
         <div className="space-y-16">
-          <Heading>
-            <HeadingTitle>
+          <div>
+            <h2 className="h3 font-bold md:h2">
               Sau<HighlightWord>khoá học</HighlightWord>các học viên nói 流畅度?
-            </HeadingTitle>
-            <HeadingDescription>
+            </h2>
+            <p className="body3 md:body2-regular">
               Review và kết quả của các bạn học viên sau một thời gian học
-            </HeadingDescription>
-          </Heading>
+            </p>
+          </div>
 
           <div className="md:columns-2 lg:columns-3 gap-6 p-4 sm:p-1">
             <div className="animate-in zoom-in duration-200">

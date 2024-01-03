@@ -24,14 +24,14 @@ export default function EarlyBird() {
     <section>
       <div className="container">
         <div className="space-y-16">
-          <Heading>
-            <HeadingTitle>
-              <HighlightWord>Early Bird</HighlightWord>Benefits
-            </HeadingTitle>
-            <HeadingDescription>
+          <div className="text-center space-y-2">
+            <h2 className="h3 font-bold md:h2">
+              Quyền lợi<HighlightWord>đăng ký sớm</HighlightWord>
+            </h2>
+            <p className="body3 md:body2-regular">
               Những quyền lợi các bạn sẽ được nhận khi đăng ký tham dự sớm
-            </HeadingDescription>
-          </Heading>
+            </p>
+          </div>
           <div className="relative">
             <ul className="grid gap-8 md:grid-cols-3">
               {features.map((item, idx) => (
@@ -42,8 +42,8 @@ export default function EarlyBird() {
                   <div className="relative text-primary bg-primary-foreground inline-flex size-[120px] justify-center items-center rounded">
                     <Image src={item.src} alt={item.title} fill />
                   </div>
-                  <h4 className="text-2xl font-semibold">{item.title}</h4>
-                  <p className="text-lg">{item.desc}</p>
+                  <h4 className="body1-semi md:subtitle1">{item.title}</h4>
+                  <p className="body3 md:body2-regular">{item.desc}</p>
                 </li>
               ))}
             </ul>
