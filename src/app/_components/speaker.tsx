@@ -10,7 +10,7 @@ export default function Speaker() {
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-[1fr_2fr] gap-16">
             <div className="rounded-full bg-auto relative aspect-[1/1] overflow-hidden">
               <Image
-                src="/speaker.jpg"
+                src="/Thay Bao Profile.jpg"
                 alt="Speaker"
                 fill
                 className="w-full h-full"
