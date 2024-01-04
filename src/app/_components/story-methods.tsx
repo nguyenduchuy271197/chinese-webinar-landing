@@ -92,12 +92,12 @@ export default function StoryMethods() {
                     </p>
                   </div>
                   <div>
-                    <p className="uppercase bg-red-100 text-red-500 py-5 text-right pr-8">
+                    <p className="subtitle2 uppercase bg-red-100 text-red-500 py-5 text-right pr-8">
                       Nhìn người khác thành công
                     </p>
                   </div>
                 </div>
-                <div className="bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
+                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
                   <p>Hay</p>
                 </div>
               </div>

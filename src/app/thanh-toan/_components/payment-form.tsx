@@ -19,7 +19,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { SingleImageDropzone } from "@/components/ui/dropzone";
 import { useEdgeStore } from "@/lib/edgestore";
-import { Loader2 } from "lucide-react";
+import { Asterisk, Loader2 } from "lucide-react";
 
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
@@ -119,7 +119,9 @@ export default function PaymentForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Họ và tên</FormLabel>
+              <FormLabel className="flex">
+                Họ và tên <span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="Họ và tên"
@@ -137,7 +139,9 @@ export default function PaymentForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>SĐT</FormLabel>
+              <FormLabel>
+                SĐT<span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="0xx xxx xx xx"
@@ -155,29 +159,12 @@ export default function PaymentForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>
+                Email<span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="Email"
-                  {...field}
-                  disabled={form.formState.isSubmitting}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="image"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Ảnh chụp màn hình chuyển khoản</FormLabel>
-              <FormControl>
-                <SingleImageDropzone
-                  width={200}
-                  height={200}
                   {...field}
                   disabled={form.formState.isSubmitting}
                 />
