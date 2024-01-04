@@ -35,10 +35,14 @@ export default function StoryDream() {
         <div className="space-y-8">
           <div className="space-y-2 max-w-3xl">
             <h3 className="h3">Công thức ẵm trọn mức lương bạn luôn mơ ước</h3>
-            <p className="body3 md:body2-regular">
-              Sau khi biết tiếng Trung, phần lớn học viên tìm được công việc tốt
-              và thu nhập tăng lên đáng kể, thoải mái tận hưởng cuộc sống mà
-              không âu lo tài chính như trước.
+            <p className="body2-regular">
+              Thầy Bảo - NGƯỜI đã chinh phục tấm bằng Thạc sĩ tiếng Trung và
+              đang là biên tập cho VTV với mức lương cao hơn 400% so với lúc mới
+              đi làm. Với gần 20 năm giảng dạy và làm việc bằng tiếng Trung,
+              thầy đã giúp cho nhiều bạn trẻ đạt được thành công sớm. Sau khoá
+              học, phần lớn học viên đã tìm được công việc tốt và thu nhập tăng
+              chóng mặt, thoải mái tận hưởng cuộc sống và không còn lăn tăn tài
+              chính như trước.
             </p>
           </div>
 
@@ -58,9 +62,7 @@ export default function StoryDream() {
                       className="rounded-md mb-4"
                     />
 
-                    <h3 className="body2-semi md:body1-semi text-neutral-700">
-                      {s.name}
-                    </h3>
+                    <h3 className="body1-semi text-neutral-700">{s.name}</h3>
                     <div className="body3 text-neutral-600">
                       <p>
                         Lương{" "}
@@ -70,11 +72,9 @@ export default function StoryDream() {
                       </p>
                     </div>
                     <div className="bg-[#FFE4DF] rounded-md">
-                      <p className="subtitle2 md:subtitle1 text-primary px-16 py-1">
+                      <p className="subtitle1 text-primary px-16 py-1">
                         {s.new} triệu
-                        <span className="font-semibold body2-semi md:body1-semi">
-                          / tháng
-                        </span>
+                        <span className="body1-semi">/ tháng</span>
                       </p>
                     </div>
                   </div>
@@ -84,7 +84,7 @@ export default function StoryDream() {
               <div className="space-y-8">
                 <div>
                   <div className="flex items-end justify-around">
-                    <h3 className="line-through text-neutral-600 subtitle2 md:subtitle1">
+                    <h3 className="line-through text-neutral-600 subtitle1">
                       7 triệu/ tháng
                     </h3>
                     <p className="bg-secondary rounded-full size-[120px] text-center flex flex-col items-center justify-center text-white text-base/[18px] md:text-lg/[20px]">
@@ -100,10 +100,7 @@ export default function StoryDream() {
                     <div className="rounded-md bg-[#FFEFC4] px-4 py-2 text-center">
                       <p className="text-secondary md:text-4xl text-2xl font-bold">
                         ??.000.000
-                        <span className="body2-semi md:body1-semi">
-                          {" "}
-                          VNĐ/tháng
-                        </span>
+                        <span className="body1-semi"> VNĐ/tháng</span>
                       </p>
                     </div>
                   </div>
@@ -120,14 +117,9 @@ export default function StoryDream() {
                     />
                   </div>
 
-                  <h2 className="h3 font-bold md:h2 text-secondary">
-                    Chúc mừng bạn!
-                  </h2>
+                  <h2 className="h2 text-secondary">Chúc mừng bạn!</h2>
 
-                  <Button
-                    variant="secondary"
-                    className="body3 font-bold md:subtitle2"
-                  >
+                  <Button variant="secondary" className="subtitle2">
                     Cách nhận mức lương ?? triệu
                   </Button>
                 </div>

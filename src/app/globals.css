@@ -81,31 +81,31 @@
 
 @layer components {
   .h1 {
-    @apply text-6xl/[72px] tracking-[0.12em] font-bold;
+    @apply sm:text-6xl/[72px] text-5xl/[64px] sm:tracking-[0.12em] font-bold;
   }
   .h2 {
-    @apply text-5xl/[64px] font-bold;
+    @apply sm:text-5xl/[64px] text-[40px]/[48px] font-bold;
   }
   .h3 {
-    @apply text-[40px]/[48px];
+    @apply sm:text-[40px]/[48px] text-4xl/[44px];
   }
   .subtitle1 {
-    @apply text-[28px]/[40px] font-bold;
+    @apply sm:text-[28px]/[40px] text-2xl/[36px] font-bold;
   }
   .subtitle2 {
-    @apply text-lg/[28px] font-bold;
+    @apply sm:text-lg/[28px] text-base/[24px] font-bold;
   }
   .body1-semi {
-    @apply text-lg/[28px] font-semibold;
+    @apply sm:text-lg/[28px] text-base/[24px] font-semibold;
   }
   .body1-regular {
-    @apply text-lg/[28px] font-normal;
+    @apply sm:text-lg/[28px] text-base/[24px] font-normal;
   }
   .body2-semi {
-    @apply text-base font-semibold;
+    @apply sm:text-base text-sm font-semibold;
   }
   .body2-regular {
-    @apply text-base font-normal;
+    @apply sm:text-base text-sm font-normal;
   }
   .body3 {
     @apply text-xs/[24px] font-normal;

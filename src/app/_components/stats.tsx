@@ -23,7 +23,7 @@ export default function Stats() {
   ];
   return (
     <div className="flex justify-center sm:block">
-      <ul className="grid grid-cols-4">
+      <ul className="grid grid-cols-2 lg:flex text-center gap-8 lg:flex-row lg:text-left">
         {stats.map((item, idx) => (
           <StatCard key={idx} {...item} />
         ))}

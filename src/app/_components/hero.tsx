@@ -17,58 +17,58 @@ export default function Hero() {
           <div className="space-y-6">
             <div className="space-y-4">
               {/* Title */}
-              <h2 className="h3 font-bold md:h2">
+              <h2 className="h2">
                 <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung với
                 phương pháp MST
               </h2>
               {/* Description */}
-              <p className="body3 md:body1-regular">
+              <p className="body1-regular">
                 CHỈ 3 GIỜ thành thạo tiếng Trung nhờ Phương pháp MST (Movie
                 Speak Technique) đảm bảo 96% TẠO ẤN TƯỢNG TUYỆT ĐỐI trong mọi
                 cuộc phỏng vấn xin việc.
               </p>
             </div>
 
-            <div>
-              <div className="flex gap-3 items-center mb-2">
-                {/* Giá giảm */}
-                <p className="line-through body1-regular">150.000 VNĐ</p>
-                {/* Tag giảm */}
-                <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-1 body3">
-                  Đăng ký sớm giảm 33%
-                </p>
-              </div>
+            <div className="space-y-2">
+              <div className="-space-y-3">
+                <div className="flex gap-3 items-center mb-2">
+                  {/* Giá giảm */}
+                  <p className="line-through body1-regular">150.000 VNĐ</p>
+                  {/* Tag giảm */}
+                  <p className="bg-primary text-primary-foreground rounded-full px-2 py-1 md:px-3 md:py-1 body3">
+                    Đăng ký sớm giảm 33%
+                  </p>
+                </div>
 
-              <div className="flex justify-between">
-                {/* Giá mới */}
-                <h3 className="h3 font-bold md:h2 text-secondary">
-                  100.000 VNĐ
-                </h3>
-                {/* % giảm */}
-                <div className=" text-primary font-bold flex items-end">
-                  <ArrowDown className="mb-1 size-4 md:size-6" />
-                  <span className="h3 md:h2">33</span>
-                  <span className="body2-semi md:body1-semi">%</span>
+                <div className="flex justify-between">
+                  {/* Giá mới */}
+                  <h3 className="h2 text-secondary">100.000 VNĐ</h3>
+                  {/* % giảm */}
+                  <div className=" text-primary font-bold flex items-end">
+                    <ArrowDown className="mb-1 size-4 md:size-6" />
+                    <span className="h2">33</span>
+                    <span className="body1-semi">%</span>
+                  </div>
                 </div>
               </div>
 
               <Button
                 variant="secondary"
                 size="lg"
-                className="w-full flex justify-center uppercase body2-semi md:subtitle2"
+                className="w-full flex justify-center uppercase subtitle2"
               >
                 <Link href="/thanh-toan">Giữ vé ngay</Link>
               </Button>
             </div>
 
-            <div className="flex justify-between gap-5">
+            <div className="flex justify-between gap-5 flex-col sm:flex-row">
               <div className="space-y-1">
                 <div className="flex items-center text-primary">
-                  <Star className="fill-primary w-4 h-4" />
-                  <Star className="fill-primary w-4 h-4" />
-                  <Star className="fill-primary w-4 h-4" />
-                  <Star className="fill-primary w-4 h-4" />
-                  <Star className="fill-primary w-4 h-4" />
+                  <Star className="fill-primary size-4" />
+                  <Star className="fill-primary size-4" />
+                  <Star className="fill-primary size-4" />
+                  <Star className="fill-primary size-4" />
+                  <Star className="fill-primary size-4" />
                 </div>
                 <p className="body3">
                   <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên

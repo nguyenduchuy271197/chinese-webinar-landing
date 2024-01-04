@@ -12,7 +12,7 @@ export default function StickyBar() {
   }: CountdownRenderProps) => {
     if (completed) {
       // Render a completed state
-      return <div>Countdown completed!</div>;
+      return <div>Thời hạn đã hết!</div>;
     } else {
       // Render a countdown
       return (
@@ -27,9 +27,9 @@ export default function StickyBar() {
   const targetDate = new Date(Date.UTC(2024, 0, 1, -7, 0, 0));
   const timestamp = targetDate.getTime();
   return (
-    <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block">
+    <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block z-50">
       <div className="container">
-        <div className="flex justify-between items-center px-8 py-2 border bg-white">
+        <div className="flex justify-between items-center px-8 py-2 border bg-white rounded-md">
           <div className="flex items-center gap-2">
             <div className="bg-primary rounded-full">
               <p className="text-white mx-3 my-2 subtitle2">
@@ -45,13 +45,13 @@ export default function StickyBar() {
             </div>
           </div>
 
-          <div className="flex gap-5">
-            <div>
+          <div className="flex gap-5 items-end">
+            <div className="-space-y-3">
               <p className="line-through body1-regular">150.000 VNĐ</p>
               <h3 className="text-secondary h2">100.000 VNĐ</h3>
             </div>
 
-            <div className="flex items-end uppercase subtitle2">
+            <div className="mb-2 uppercase subtitle2">
               <Button variant="secondary">Giữ vé ngay</Button>
             </div>
           </div>

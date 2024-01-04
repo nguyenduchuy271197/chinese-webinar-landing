@@ -11,14 +11,13 @@ export default function StatCard({
   title: string;
 }) {
   return (
-    <li className="text-center md:flex items-center">
-      <h1 className="h3 font-bold md:h1 text-primary">
-        {value !== undefined && <CountUp end={value} />}
+    <li className="md:flex items-center text-balance">
+      <h1 className="h1 text-primary">
+        {/* {value !== undefined && <CountUp end={value} />} */}
+        {value}
         {postfix}
       </h1>
-      <p className="text-gray-600 body2-regular md:body1-regular uppercase">
-        {title}
-      </p>
+      <p className="text-gray-600 body1-regular uppercase">{title}</p>
     </li>
   );
 }

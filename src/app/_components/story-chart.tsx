@@ -29,11 +29,11 @@ export default function StoryChart() {
           <Image src="/Image 1.png" alt="" width={720} height={570} />
 
           <div className="p-28 text-left text-white space-y-2">
-            <h2 className="h3 font-bold md:h2">
+            <h2 className="h2">
               Cơ hội việc làm<HighlightWord>cực lớn</HighlightWord>{" "}
               <span className="text-secondary">x10 lần</span>
             </h2>
-            <p className="body2-semi md:body1-semi">
+            <p className="body1-semi">
               thông qua các mối quan hệ trong cộng đồng tiếng Trung
             </p>
           </div>
@@ -43,12 +43,10 @@ export default function StoryChart() {
           <Image src="/Image 2.png" alt="" width={720} height={570} />
 
           <div className="p-28 text-left text-white space-y-2">
-            <h2 className="h3 font-bold md:h2">
+            <h2 className="h2">
               Tăng tốc làm giàu cùng<HighlightWord>TOP 10%</HighlightWord>
             </h2>
-            <p className="body2-semi md:body1-semi">
-              những người xuất sắc trong ngành.
-            </p>
+            <p className="body1-semi">những người xuất sắc trong ngành.</p>
           </div>
         </SwiperSlide>
 
@@ -56,8 +54,8 @@ export default function StoryChart() {
           <Image src="/Image 3.png" alt="" width={720} height={570} />
 
           <div className="p-28 text-left text-white space-y-2">
-            <h2 className="h3 font-bold md:h2">Thúc đẩy hiệu quả cạnh tranh</h2>
-            <p className="body2-semi md:body1-semi">
+            <h2 className="h2">Thúc đẩy hiệu quả cạnh tranh</h2>
+            <p className="body1-semi">
               trong đàm phán kinh doanh quốc tế với các đối tác và nhà đầu tư
               Trung Quốc
             </p>
