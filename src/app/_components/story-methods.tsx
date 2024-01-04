@@ -28,7 +28,7 @@ export default function StoryMethods() {
   return (
     <section>
       <div className="container">
-        <h2 className="h3 font-bold md:h2 w-[1000px] mb-11">
+        <h2 className="h3 font-bold md:h2 md:w-[1000px] mb-11">
           Lột xác với phương pháp MST được thiết kế{" "}
           <span className="text-primary">riêng biệt</span> và
           <HighlightWord>duy nhất</HighlightWord>cho bạn
@@ -42,8 +42,8 @@ export default function StoryMethods() {
                   <th className=" text-neutral-600 body2-semi md:subtitle2">
                     Phương pháp truyền thống
                   </th>
-                  <th className="bg-[#008900] text-white border-white border rounded-t-sm px-8 py-4 body2-semi md:subtitle2">
-                    Phương pháp học 3h
+                  <th className="uppercase bg-[#008900] text-white border-white border rounded-t-sm px-8 py-4 body2-semi md:subtitle2">
+                    Phương Pháp học MST
                   </th>
                 </tr>
               </thead>
