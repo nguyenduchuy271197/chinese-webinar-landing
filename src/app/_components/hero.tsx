@@ -18,8 +18,8 @@ export default function Hero() {
             <div className="space-y-4">
               {/* Title */}
               <h2 className="h2">
-                <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung với
-                phương pháp MST
+                <HighlightWord className="ml-0">Ngừng học vẹt</HighlightWord>
+                tiếng Trung với phương pháp MST
               </h2>
               {/* Description */}
               <p className="body1-regular">
