@@ -33,7 +33,7 @@ export default function StoryMethods() {
           <span className="text-primary">riêng biệt</span> và
           <HighlightWord>duy nhất</HighlightWord>cho bạn
         </h2>
-        <div className="grid md:grid-cols-[4fr_3fr] gap-20 sm:gap-8">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-[4fr_3fr] gap-20 sm:gap-8">
           <div className="flex flex-col gap-10">
             <table>
               <thead className="uppercase">
@@ -97,7 +97,7 @@ export default function StoryMethods() {
                     </p>
                   </div>
                 </div>
-                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
+                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center">
                   <p>Hay</p>
                 </div>
               </div>

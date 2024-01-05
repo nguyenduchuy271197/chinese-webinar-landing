@@ -33,7 +33,7 @@ export default function Targets() {
   return (
     <section className="bg-slate-50">
       <div className="container">
-        <div className="gap-16 md:px-8 flex flex-col-reverse lg:flex-row py-20 items-start">
+        <div className="gap-16 md:px-8 flex flex-col lg:flex-row py-20 items-start">
           <div className="w-full lg:w-[30%] shrink-0 grid grid-cols-2 gap-4">
             <div className="aspect-[1/1] bg-slate-200 rounded-md size-40">
               <Image

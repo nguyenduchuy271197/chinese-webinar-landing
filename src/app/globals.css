@@ -81,7 +81,7 @@
 
 @layer components {
   .h1 {
-    @apply sm:text-6xl/[72px] text-5xl/[64px] sm:tracking-[0.12em] font-bold;
+    @apply sm:text-6xl/[72px] text-5xl/[64px] font-bold;
   }
   .h2 {
     @apply sm:text-5xl/[64px] text-[40px]/[48px] font-bold;
