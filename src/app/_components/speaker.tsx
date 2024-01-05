@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Speaker() {
   return (
-    <section className="bg-primary">
+    <section className="bg-primary" id="speaker">
       <div className="max-w-screen-sm lg:max-w-screen-xl px-8 mx-auto">
         <div className="flex flex-col gap-20 py-20">
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-[1fr_2fr] gap-16">

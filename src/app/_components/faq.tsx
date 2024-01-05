@@ -1,5 +1,4 @@
 import HighlightWord from "@/components/highlight-word";
-import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +8,7 @@ import {
 
 export default function FAQ() {
   return (
-    <section>
+    <section id="faq">
       <div className="container">
         <div className="space-y-16 sm:pt-28">
           <div className="text-center">

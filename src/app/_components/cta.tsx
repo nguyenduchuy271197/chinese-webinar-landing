@@ -1,5 +1,6 @@
 import HighlightWord from "@/components/highlight-word";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -19,9 +20,11 @@ export default function CTA() {
               Sau 3h, cuộc sống của bạn sẽ hoàn toàn thay đổi.
             </p>
           </div>
-          <Button variant="secondary" size="lg" className="subtitle2">
-            Giữ vé ngay
-          </Button>
+          <Link href="/thanh-toan" className="inline-flex">
+            <Button variant="secondary" size="lg">
+              Giữ vé ngay
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -3,20 +3,14 @@
 import { useState } from "react";
 import Logo from "./logo";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import NavList from "@/app/_components/share/nav-list";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
 
-  const navigation = [
-    { title: "Thông tin khóa học", path: "/" },
-    { title: "Giảng viên", path: "/" },
-    { title: "Agenda", path: "/" },
-    { title: "Review", path: "/" },
-    { title: "FAQ", path: "/" },
-  ];
-
   return (
-    <nav className="bg-white w-full border-b md:static">
+    <nav className="bg-white w-full border-b fixed top-0 left-0 right-0 z-40">
       <div className="container">
         <div className="md:flex items-center py-1">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -63,18 +57,12 @@ export default function Navbar() {
               state ? "block" : "hidden"
             }`}
           >
-            <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {navigation.map((item, idx) => {
-                return (
-                  <li key={idx} className="text-gray-600 hover:text-primary">
-                    <a href={item.path}>{item.title}</a>
-                  </li>
-                );
-              })}
-            </ul>
+            <NavList />
           </div>
           <div className="hidden md:inline-block">
-            <Button variant="secondary">Giữ vé ngay</Button>
+            <Link href="/thanh-toan">
+              <Button variant="secondary">Giữ vé ngay</Button>
+            </Link>
           </div>
         </div>
       </div>

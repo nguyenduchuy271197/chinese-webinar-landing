@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { useInViewStore } from "@/hooks/use-inview";
+import Link from "next/link";
 import CountDown, { CountdownRenderProps, zeroPad } from "react-countdown";
 
 export default function StickyBar() {
@@ -52,13 +53,15 @@ export default function StickyBar() {
           </div>
 
           <div className="flex gap-5 items-end">
-            <div className="-space-y-3">
+            <div className="-space-y-1">
               <p className="line-through body1-regular">150.000 VNĐ</p>
-              <h3 className="text-secondary h2">100.000 VNĐ</h3>
+              <h3 className="text-secondary h2 leading-none">100.000 VNĐ</h3>
             </div>
 
-            <div className="mb-2 uppercase subtitle2">
-              <Button variant="secondary">Giữ vé ngay</Button>
+            <div className="mb-1 uppercase subtitle2">
+              <Link href="/thanh-toan">
+                <Button variant="secondary">Giữ vé ngay</Button>
+              </Link>
             </div>
           </div>
         </div>

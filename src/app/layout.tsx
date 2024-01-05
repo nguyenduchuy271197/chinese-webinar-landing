@@ -25,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("bg-background antialiased", sourceSans.className)}>
+      <body
+        className={cn("bg-background antialiased mt-12", sourceSans.className)}
+      >
         <Providers>
           <EdgeStoreProvider>
             <Navbar />

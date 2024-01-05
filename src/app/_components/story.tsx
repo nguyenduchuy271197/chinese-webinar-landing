@@ -23,7 +23,7 @@ const story = [
 
 export default function Story() {
   return (
-    <section>
+    <section id="story">
       <div className="container">
         <div className="space-y-8">
           <div className="space-y-2 text-center">

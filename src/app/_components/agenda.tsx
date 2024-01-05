@@ -35,7 +35,7 @@ const curriculum = [
 
 export default function Agenda() {
   return (
-    <section>
+    <section id="agenda">
       <div className="container">
         <div className="grid sm:grid-cols-2 gap-8">
           <div>

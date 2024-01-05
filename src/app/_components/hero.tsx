@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="hero">
       <div className="container">
         <div className="grid lg:grid-cols-[1fr_600px] gap-8 mb-12">
           <div>
@@ -52,13 +52,15 @@ export default function Hero() {
                 </div>
               </div>
 
-              <Button
-                variant="secondary"
-                size="lg"
-                className="w-full flex justify-center"
-              >
-                <Link href="/thanh-toan">Giữ vé ngay</Link>
-              </Button>
+              <Link href="/thanh-toan">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="w-full flex justify-center"
+                >
+                  Giữ vé ngay
+                </Button>
+              </Link>
             </div>
 
             <div className="flex justify-between gap-5 flex-col sm:flex-row">

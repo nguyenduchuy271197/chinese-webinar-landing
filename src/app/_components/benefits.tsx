@@ -1,5 +1,4 @@
 import HighlightWord from "@/components/highlight-word";
-import { Heading, HeadingDescription, HeadingTitle } from "./share/heading";
 
 export default function Benefits() {
   const features = [
@@ -122,7 +121,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="bg-neutral-100">
+    <section className="bg-neutral-100" id="benefits">
       <div className="container">
         <div className="space-y-12 py-20">
           <div className="h2">
