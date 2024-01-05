@@ -55,15 +55,15 @@ export default function Reviews() {
             </p>
           </div>
 
-          <div className="grid grid-cols-4 auto-rows-[150px] gap-8 [&>div]:bg-gray-200">
+          <div className="grid lg:grid-cols-4 auto-rows-[150px] gap-8 [&>div]:bg-gray-200">
             {reviews.map((review, i) => (
               <div
                 className={cn(
                   "rounded-md",
                   [1, 6, 7].includes(i)
-                    ? "row-span-2"
+                    ? "lg:row-span-2"
                     : [3, 4].includes(i)
-                    ? "row-span-3"
+                    ? "lg:row-span-3"
                     : ""
                 )}
                 key={i}

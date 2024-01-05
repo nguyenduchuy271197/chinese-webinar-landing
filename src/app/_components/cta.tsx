@@ -6,7 +6,7 @@ export default function CTA() {
   return (
     <section>
       <div className="container">
-        <div className="bg-primary space-y-8 text-white rounded-md mx-auto py-10 px-20">
+        <div className="bg-primary space-y-8 text-white rounded-md mx-auto py-10 px-8 sm:px-20">
           <div className="space-y-4">
             <h2 className="h2">
               Bắt đầu

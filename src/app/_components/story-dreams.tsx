@@ -63,19 +63,13 @@ export default function StoryDream() {
                     />
 
                     <h3 className="body1-semi text-neutral-700">{s.name}</h3>
-                    <div className="body3 text-neutral-600">
-                      <p>
-                        Lương{" "}
-                        <span className="line-through">
-                          {s.old} triệu/ tháng
-                        </span>
-                      </p>
-                    </div>
-                    <div className="bg-[#FFE4DF] rounded-md">
-                      <p className="subtitle1 text-primary px-16 py-1">
-                        {s.new} triệu
-                        <span className="body1-semi">/ tháng</span>
-                      </p>
+                    <p className="body3 text-neutral-600 px-8">
+                      Lương{" "}
+                      <span className="line-through">{s.old} triệu/ tháng</span>
+                    </p>
+                    <div className="bg-red-100 rounded-md subtitle1 text-primary py-1 w-full max-w-[250px] text-center">
+                      {s.new} triệu
+                      <span className="body1-semi">/ tháng</span>
                     </div>
                   </div>
                 ))}

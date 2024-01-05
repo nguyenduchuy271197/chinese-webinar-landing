@@ -85,19 +85,19 @@ export default function StoryMethods() {
               </h3>
 
               <div className="relative">
-                <div className="grid grid-cols-2 rounded-md overflow-hidden">
+                <div className="grid sm:grid-cols-2 rounded-md overflow-hidden">
                   <div className="subtitle2">
-                    <p className="uppercase bg-[#D9EDD9] text-[#008900] py-5 pl-8">
+                    <p className="uppercase bg-[#D9EDD9] text-[#008900] text-center sm:text-left py-5 sm:pl-8 pb-16 sm:pb-0">
                       Đi kiếm 45 triệu/tháng
                     </p>
                   </div>
                   <div>
-                    <p className="subtitle2 uppercase bg-red-100 text-red-500 py-5 text-right pr-8">
+                    <p className="subtitle2 uppercase bg-red-100 text-red-500 py-5 text-center sm:text-right sm:pr-8 pt-16 sm:pt-0">
                       Nhìn người khác thành công
                     </p>
                   </div>
                 </div>
-                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center">
+                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 flex items-center justify-center">
                   <p>Hay</p>
                 </div>
               </div>
