@@ -15,11 +15,11 @@ export default function YoutubeVideo({ videoId }: { videoId: string }) {
           alt="Thumbnail"
           width={1000}
           height={500}
-          className="w-full h-full obhec mx-auto brightness-75"
+          className="w-full h-full object-cover mx-auto brightness-[60%]"
         />
         <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
           <button onClick={() => setOpen(true)}>
-            <PlayCircle className="w-10 h-10 text-primary" />
+            <PlayCircle className="w-14 h-14 text-secondary stroke-1" />
           </button>
         </div>
       </div>
