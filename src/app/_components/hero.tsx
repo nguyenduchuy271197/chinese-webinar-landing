@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
 
             <div className="flex justify-between gap-5 flex-col sm:flex-row">
-              <div className="space-y-1 flex gap-2">
+              <div className="space-y-1 flex gap-2 justify-between sm:items-baseline w-full">
                 <div>
                   <div className="flex items-center text-primary">
                     <Star className="fill-primary size-4" />
