@@ -39,7 +39,7 @@ export default function PaymentContent() {
           <div className="space-y-2">
             <span className="flex gap-2 body1-regular">
               <CalendarClock />
-              02:00 PM - 06:00 PM, 22/01/2024
+              14:00 - 17:00, 20/01/2024
             </span>
 
             <span className="flex gap-2 body1-regular">

@@ -38,18 +38,18 @@ const phoneRegex = new RegExp(
 
 const paymentFormSchema = z.object({
   name: z.string().min(2, {
-    message: "Tên bạn phải có ít nhất 2 ký tự trở lên",
+    message: "Tên không hợp lệ",
   }),
 
   phone: z
     .string()
-    .min(10, "Số điện thoại phải có ít nhất 10 số trở lên")
-    .regex(phoneRegex, "Số điện thoại chỉ có chữ số"),
+    .min(10, "Số điện thoại phải có 10 chữ số")
+    .regex(phoneRegex, "Số điện thoại chỉ có số"),
 
   email: z
     .string()
     .min(2, {
-      message: "Phải là địa chỉ email",
+      message: "Địa chỉ email không hợp lệ",
     })
     .email("Phải là địa chỉ email có thật"),
 
