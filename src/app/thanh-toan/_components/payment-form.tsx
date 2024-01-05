@@ -19,6 +19,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { SingleImageDropzone } from "@/components/ui/dropzone";
 import { useEdgeStore } from "@/lib/edgestore";
+import { useRouter } from "next/navigation";
 
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
@@ -82,16 +83,17 @@ export default function PaymentForm() {
       code: "",
     },
   });
+  const router = useRouter();
 
   // const { edgestore } = useEdgeStore();
 
   const { mutate: mutateSubmit, isPending: isSubmitting } = useMutation({
     mutationFn: (paymentInfo: Payment) =>
       axios.post("/api/payment", paymentInfo),
-    onMutate: () => {
-      toast.success("Bạn đã đăng ký thành công!");
-      form.reset();
-    },
+    // onMutate: () => {
+    //   toast.success("Bạn đã đăng ký thành công!");
+    //   form.reset();
+    // },
   });
 
   async function onSubmit(data: PaymentForm) {
@@ -111,19 +113,23 @@ export default function PaymentForm() {
       // url: fileUrl,
       code: data.code,
     });
+
+    router.replace("https://www.google.com");
   }
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 bg-[#F8F9FA] px-6 py-10 rounded-md"
+        className="space-y-4 bg-[#F8F9FA] px-6 py-10 rounded-md"
       >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Họ và tên</FormLabel>
+              <FormLabel>
+                Họ và tên<span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="Họ và tên"
@@ -141,7 +147,9 @@ export default function PaymentForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>SĐT</FormLabel>
+              <FormLabel>
+                SĐT<span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="0xx xxx xx xx"
@@ -159,7 +167,9 @@ export default function PaymentForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>
+                Email<span className="text-primary">*</span>
+              </FormLabel>
               <FormControl>
                 <Input
                   placeholder="Email"
@@ -208,13 +218,15 @@ export default function PaymentForm() {
             </FormItem>
           )}
         />
-        <Button
-          type="submit"
-          disabled={form.formState.isSubmitting}
-          className="uppercase"
-        >
-          Hoàn tất thanh toán
-        </Button>
+        <div className="!mt-6">
+          <Button
+            type="submit"
+            disabled={form.formState.isSubmitting}
+            className="uppercase"
+          >
+            Thực hiện thanh toán
+          </Button>
+        </div>
       </form>
     </Form>
   );
