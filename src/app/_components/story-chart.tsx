@@ -17,9 +17,7 @@ export default function StoryChart() {
         pagination={{
           clickable: true,
           renderBullet: (index, className) => {
-            return `<span class="${className} custom-bullet">${
-              index + 1
-            }</span>`; // Custom bullet with number
+            return `<span class="${className} custom-bullet"></span>`; // Custom bullet with number
           },
         }}
         modules={[Autoplay, Pagination]}
