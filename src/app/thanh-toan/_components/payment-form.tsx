@@ -21,6 +21,9 @@ import { SingleImageDropzone } from "@/components/ui/dropzone";
 import { useEdgeStore } from "@/lib/edgestore";
 import { useRouter } from "next/navigation";
 
+const CHECKOUT_PAYMENT_URL =
+  "https://likelion.notion.site/B-n-gi-v-th-nh-c-ng-vui-l-ng-thanh-to-n-trong-24h-12453ec766eb40508ec09b2aff321add?pvs=4";
+
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
 );
@@ -114,7 +117,7 @@ export default function PaymentForm() {
       code: data.code,
     });
 
-    router.replace("https://www.google.com");
+    router.replace(CHECKOUT_PAYMENT_URL);
   }
   return (
     <Form {...form}>

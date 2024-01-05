@@ -12,10 +12,10 @@ export default function Navbar() {
   return (
     <nav className="bg-white w-full border-b fixed top-0 left-0 right-0 z-40">
       <div className="container">
-        <div className="md:flex items-center py-1">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="lg:flex items-center py-1">
+          <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
             <Logo />
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button
                 className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                 onClick={() => setState(!state)}
@@ -53,13 +53,13 @@ export default function Navbar() {
             </div>
           </div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
               state ? "block" : "hidden"
             }`}
           >
             <NavList />
           </div>
-          <div className="hidden md:inline-block">
+          <div className="hidden lg:inline-flex">
             <Link href="/thanh-toan">
               <Button variant="secondary">Giữ vé ngay</Button>
             </Link>
