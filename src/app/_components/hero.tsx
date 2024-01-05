@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
 
             <div className="space-y-2">
-              <div className="-space-y-3">
+              <div className="-space-y-2 md:-space-y-3">
                 <div className="flex gap-3 items-center mb-2">
                   {/* Giá giảm */}
                   <p className="line-through body1-regular">150.000 VNĐ</p>
@@ -44,7 +44,7 @@ export default function Hero() {
                   {/* Giá mới */}
                   <h3 className="h2 text-secondary">100.000 VNĐ</h3>
                   {/* % giảm */}
-                  <div className=" text-primary font-bold flex items-end">
+                  <div className=" text-primary font-bold flex items-baseline">
                     <ArrowDown className="mb-1 size-4 md:size-6" />
                     <span className="h2">33</span>
                     <span className="body1-semi">%</span>
@@ -52,7 +52,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <Link href="/thanh-toan">
+              <Link href="/thanh-toan" className="flex">
                 <Button
                   variant="secondary"
                   size="lg"
@@ -64,21 +64,23 @@ export default function Hero() {
             </div>
 
             <div className="flex justify-between gap-5 flex-col sm:flex-row">
-              <div className="space-y-1">
-                <div className="flex items-center text-primary">
-                  <Star className="fill-primary size-4" />
-                  <Star className="fill-primary size-4" />
-                  <Star className="fill-primary size-4" />
-                  <Star className="fill-primary size-4" />
-                  <Star className="fill-primary size-4" />
+              <div className="space-y-1 flex gap-2">
+                <div>
+                  <div className="flex items-center text-primary">
+                    <Star className="fill-primary size-4" />
+                    <Star className="fill-primary size-4" />
+                    <Star className="fill-primary size-4" />
+                    <Star className="fill-primary size-4" />
+                    <Star className="fill-primary size-4" />
+                  </div>
+                  <div className="flex justify-between">
+                    <p className="body3">
+                      <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học
+                      viên
+                    </p>
+                  </div>
                 </div>
-                <div className="flex justify-between">
-                  <p className="body3">
-                    <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên
-                  </p>
-
-                  <ShareButton />
-                </div>
+                <ShareButton />
               </div>
             </div>
           </div>

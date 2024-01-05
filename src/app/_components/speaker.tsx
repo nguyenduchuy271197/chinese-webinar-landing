@@ -7,10 +7,10 @@ export default function Speaker() {
     <section className="bg-primary" id="speaker">
       <div className="max-w-screen-sm lg:max-w-screen-xl px-8 mx-auto">
         <div className="flex flex-col gap-20 py-20">
-          <div className="flex flex-col lg:grid lg:grid-cols-[1fr_2fr] gap-16">
-            <div className="md:hidden">
+          <div className="flex flex-col lg:grid lg:grid-cols-[1fr_2fr] gap-10 md:gap-16">
+            <div className="lg:hidden">
               <p className="uppercase subtitle2 text-white">Giảng viên</p>
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-4">
                 <div className="text-white font-bold">
                   <h2 className="h2">
                     Thầy
@@ -120,7 +120,7 @@ export default function Speaker() {
             </div>
 
             <div className="space-y-8">
-              <div className="hidden">
+              <div className="hidden lg:block">
                 <p className="uppercase subtitle2 text-white">Giảng viên</p>
                 <div className="flex gap-8 justify-between items-center">
                   <div className="text-white font-bold">
