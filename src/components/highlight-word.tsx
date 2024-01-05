@@ -1,8 +1,16 @@
-import { ReactNode } from "react";
+import { cn } from "@/lib/utils";
+import { HTMLAttributes } from "react";
 
-export default function HighlightWord({ children }: { children: ReactNode }) {
+export default function HighlightWord({
+  children,
+  className,
+  ...props
+}: HTMLAttributes<HTMLSpanElement>) {
   return (
-    <span className="relative mx-[0.2em] text-primary inline-flex">
+    <span
+      className={cn("relative mx-[0.2em] text-primary inline-flex", className)}
+      {...props}
+    >
       {children}
       <svg
         viewBox="0 0 396 17"
@@ -12,7 +20,6 @@ export default function HighlightWord({ children }: { children: ReactNode }) {
       >
         <path
           d="M2 15C92.8023 6.70527 278.836 -4.11519 394 6.25321"
-          stroke="#F4B205"
           strokeWidth={5}
           strokeLinecap="round"
         />

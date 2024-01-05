@@ -45,7 +45,7 @@ export default function Reviews() {
   return (
     <section>
       <div className="container">
-        <div className="space-y-2">
+        <div className="space-y-8">
           <div>
             <h2 className="font-bold h2">
               Sau<HighlightWord>khoá học</HighlightWord>các học viên nói 流畅度?

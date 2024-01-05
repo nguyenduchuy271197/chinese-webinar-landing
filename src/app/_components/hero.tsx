@@ -55,7 +55,7 @@ export default function Hero() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="w-full flex justify-center uppercase subtitle2"
+                className="w-full flex justify-center"
               >
                 <Link href="/thanh-toan">Giữ vé ngay</Link>
               </Button>

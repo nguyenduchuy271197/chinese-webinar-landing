@@ -8,7 +8,11 @@ export default function CTA() {
         <div className="bg-primary space-y-8 text-white rounded-md mx-auto py-10 px-20">
           <div className="space-y-4">
             <h2 className="h2">
-              Bắt đầu<HighlightWord>hành trình</HighlightWord>ngừng học vẹt!
+              Bắt đầu
+              <HighlightWord className="text-secondary">
+                hành trình
+              </HighlightWord>
+              ngừng học vẹt!
             </h2>
 
             <p className="body2-regular">

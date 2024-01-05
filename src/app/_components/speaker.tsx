@@ -23,7 +23,10 @@ export default function Speaker() {
                 <div className="flex gap-8 justify-between items-center">
                   <div className="text-white font-bold">
                     <h2 className="h2">
-                      Thầy<HighlightWord>Hoàng Bảo</HighlightWord>
+                      Thầy
+                      <HighlightWord className="text-white">
+                        Hoàng Bảo
+                      </HighlightWord>
                     </h2>
                   </div>
 

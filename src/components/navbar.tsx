@@ -74,7 +74,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="hidden md:inline-block">
-            <Button variant="secondary">Đăng ký ngay</Button>
+            <Button variant="secondary">Giữ vé ngay</Button>
           </div>
         </div>
       </div>
