@@ -161,7 +161,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="body2-regular text-neutral-500 text-center">
+        <p className="body2-regular text-neutral-500 text-center p-8">
           Copyright @ 2023, LIKELION Co., Ltd
         </p>
       </div>

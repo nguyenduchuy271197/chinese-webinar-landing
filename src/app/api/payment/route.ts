@@ -32,15 +32,15 @@ export async function POST(request: Request) {
         email: user.email,
       },
 
-      URL: {
-        rich_text: [
-          {
-            text: {
-              content: user.url,
-            },
-          },
-        ],
-      },
+      // URL: {
+      //   rich_text: [
+      //     {
+      //       text: {
+      //         content: user.url,
+      //       },
+      //     },
+      //   ],
+      // },
 
       Code: {
         rich_text: [
