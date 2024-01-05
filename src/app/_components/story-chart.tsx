@@ -28,7 +28,7 @@ export default function StoryChart() {
         <SwiperSlide className="grid md:grid-cols-2">
           <Image src="/Image 1.png" alt="" width={720} height={570} />
 
-          <div className="p-28 text-left text-white space-y-2">
+          <div className="p-12 sm:p-28 text-left text-white space-y-2">
             <h2 className="h2">
               Cơ hội việc làm<HighlightWord>cực lớn</HighlightWord>{" "}
               <span className="text-secondary">x10 lần</span>
@@ -42,7 +42,7 @@ export default function StoryChart() {
         <SwiperSlide className="grid md:grid-cols-2">
           <Image src="/Image 2.png" alt="" width={720} height={570} />
 
-          <div className="p-28 text-left text-white space-y-2">
+          <div className="p-12 sm:p-28 text-left text-white space-y-2">
             <h2 className="h2">
               Tăng tốc làm giàu cùng<HighlightWord>TOP 10%</HighlightWord>
             </h2>
@@ -53,7 +53,7 @@ export default function StoryChart() {
         <SwiperSlide className="grid md:grid-cols-2">
           <Image src="/Image 3.png" alt="" width={720} height={570} />
 
-          <div className="p-28 text-left text-white space-y-2">
+          <div className="p-12 sm:p-28 text-left text-white space-y-2">
             <h2 className="h2">Thúc đẩy hiệu quả cạnh tranh</h2>
             <p className="body1-semi">
               trong đàm phán kinh doanh quốc tế với các đối tác và nhà đầu tư

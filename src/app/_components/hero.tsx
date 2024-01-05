@@ -72,12 +72,14 @@ export default function Hero() {
                   <Star className="fill-primary size-4" />
                   <Star className="fill-primary size-4" />
                 </div>
-                <p className="body3">
-                  <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên
-                </p>
-              </div>
+                <div className="flex justify-between">
+                  <p className="body3">
+                    <strong>4.7</strong> - dựa trên 1,000+ đánh giá từ học viên
+                  </p>
 
-              <ShareButton />
+                  <ShareButton />
+                </div>
+              </div>
             </div>
           </div>
         </div>
