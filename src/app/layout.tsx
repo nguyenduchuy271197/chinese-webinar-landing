@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
+import "react-modal-video/scss/modal-video.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./globals.css";
