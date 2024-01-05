@@ -92,10 +92,10 @@ export default function Targets() {
           </div>
           <div className="space-y-12">
             <div className="text-left space-y-2">
-              <h2 className="h3 font-bold md:h2">
+              <h2 className="h2">
                 Khoá học này<HighlightWord>là cho bạn đó</HighlightWord>
               </h2>
-              <p className="body3 md:body2-regular">
+              <p className="body2-regular">
                 Thiết kế phù hợp với nhu cầu của đa dạng học viên giúp tăng 97%
                 mức độ hài lòng.
               </p>
@@ -108,10 +108,8 @@ export default function Targets() {
                       <Check className="text-white size-6" />
                     </div>
                     <div>
-                      <h4 className="body2-semi md:subtitle2 text-gray-800">
-                        {item.title}
-                      </h4>
-                      <p className="mt-3 body3 md:body2-regular">{item.desc}</p>
+                      <h4 className="subtitle2 text-gray-800">{item.title}</h4>
+                      <p className="mt-3 body2-regular">{item.desc}</p>
                     </div>
                   </li>
                 ))}

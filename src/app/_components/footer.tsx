@@ -11,32 +11,28 @@ export default function Footer() {
               <Image src="/logo.svg" alt="logo" width={215} height={24} />
             </div>
 
-            <p className="body3 font-semibold md:body2-semi">
+            <p className="body2-semi">
               Từ người mới bắt đầu đến người đã có kiến thức, bạn đều có thể tìm
               được khoá học phù hợp để nâng cao kỹ năng của mình.
             </p>
           </div>
 
           <div className="flex flex-col space-y-4">
-            <h3 className="body2-semi md:subtitle2 uppercase">
-              Liên hệ chúng tôi
-            </h3>
+            <h3 className="subtitle2 uppercase">Liên hệ chúng tôi</h3>
 
             <div className="flex flex-col space-y-4">
               <div>
-                <h4 className="body2-semi md:body1-semi">Điện thoại</h4>
-                <p className="body3 md:body2-regular">(+84) 86 713 3779</p>
+                <h4 className="body1-semi">Điện thoại</h4>
+                <p className="body2-regular">(+84) 86 713 3779</p>
               </div>
 
               <div>
-                <h4 className="body2-semi md:body1-semi">Email</h4>
-                <p className="body3 md:body2-regular">
-                  likelion.vn@likelion.net
-                </p>
+                <h4 className="body1-semi">Email</h4>
+                <p className="body2-regular">likelion.vn@likelion.net</p>
               </div>
 
               <div className="space-y-2">
-                <h4 className="body2-semi md:body1-semi">Mạng xã hội</h4>
+                <h4 className="body1-semi">Mạng xã hội</h4>
                 <ul className="flex gap-2">
                   <li>
                     <svg
@@ -149,15 +145,15 @@ export default function Footer() {
 
           <div className="space-y-6">
             <div className="space-y-2">
-              <h3 className="uppercase body2-semi md:subtitle2">Địa chỉ</h3>
-              <p className="body3 md:body2-regular">
+              <h3 className="uppercase subtitle2">Địa chỉ</h3>
+              <p className="body2-regular">
                 Tầng 25, Tòa nhà Lim Tower
                 <br />9 - 11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP. HCM
               </p>
             </div>
 
             <div className="space-y-2">
-              <h3 className="uppercase body2-semi md:subtitle2">Chính sách</h3>
+              <h3 className="uppercase subtitle2">Chính sách</h3>
               <div className="flex flex-col underline text-xs md:text-base">
                 <a href="#">Term of service</a>
                 <a href="#">Privacy Policy</a>
@@ -165,7 +161,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="body3 md:body2-regular text-neutral-500 text-center">
+        <p className="body2-regular text-neutral-500 text-center p-8">
           Copyright @ 2023, LIKELION Co., Ltd
         </p>
       </div>

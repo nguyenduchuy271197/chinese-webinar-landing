@@ -19,19 +19,18 @@ import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { SingleImageDropzone } from "@/components/ui/dropzone";
 import { useEdgeStore } from "@/lib/edgestore";
-import { Loader2 } from "lucide-react";
 
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
 );
 
-const MAX_FILE_SIZE = 50000;
-const ACCEPTED_IMAGE_TYPES = [
-  "image/jpeg",
-  "image/jpg",
-  "image/png",
-  "image/webp",
-];
+// const MAX_FILE_SIZE = 50000;
+// const ACCEPTED_IMAGE_TYPES = [
+//   "image/jpeg",
+//   "image/jpg",
+//   "image/png",
+//   "image/webp",
+// ];
 
 const paymentFormSchema = z.object({
   name: z.string().min(2, {
@@ -50,21 +49,27 @@ const paymentFormSchema = z.object({
     })
     .email("Phải là địa chỉ email có thật"),
 
-  image: z
-    .any()
-    .refine((file) => !!file, "Image is required.")
-    .refine((file) => file.size <= MAX_FILE_SIZE, `Max file size is 5MB.`)
-    .refine(
-      (file) => ACCEPTED_IMAGE_TYPES.includes(file.type),
-      ".jpg, .jpeg, .png and .webp files are accepted."
-    ),
+  // image: z
+  //   .any()
+  //   .refine((file) => !!file, "Image is required.")
+  //   .refine((file) => file.size <= MAX_FILE_SIZE, `Max file size is 5MB.`)
+  //   .refine(
+  //     (file) => ACCEPTED_IMAGE_TYPES.includes(file.type),
+  //     ".jpg, .jpeg, .png and .webp files are accepted."
+  //   ),
 
   code: z.string().optional(),
 });
 
 type PaymentForm = z.infer<typeof paymentFormSchema>;
-interface Payment extends Omit<PaymentForm, "image"> {
-  url: string;
+// interface Payment extends Omit<PaymentForm, "image"> {
+//   url: string;
+// }
+interface Payment {
+  name: string;
+  phone: string;
+  email: string;
+  code?: string;
 }
 
 export default function PaymentForm() {
@@ -78,7 +83,7 @@ export default function PaymentForm() {
     },
   });
 
-  const { edgestore } = useEdgeStore();
+  // const { edgestore } = useEdgeStore();
 
   const { mutate: mutateSubmit, isPending: isSubmitting } = useMutation({
     mutationFn: (paymentInfo: Payment) =>
@@ -90,23 +95,22 @@ export default function PaymentForm() {
   });
 
   async function onSubmit(data: PaymentForm) {
-    if (data.image) {
-      const res = await edgestore.publicFiles.upload({
-        file: data.image,
-        onProgressChange: (progress) => {
-          console.log(progress);
-        },
-      });
-      const fileUrl = res.url;
+    // if (data.image) {
+    //   const res = await edgestore.publicFiles.upload({
+    //     file: data.image,
+    //     onProgressChange: (progress) => {
+    //       console.log(progress);
+    //     },
+    //   });
+    //   const fileUrl = res.url;
 
-      mutateSubmit({
-        name: data.name,
-        phone: data.phone,
-        email: data.email,
-        url: fileUrl,
-        code: data.code,
-      });
-    }
+    mutateSubmit({
+      name: data.name,
+      phone: data.phone,
+      email: data.email,
+      // url: fileUrl,
+      code: data.code,
+    });
   }
   return (
     <Form {...form}>
@@ -168,7 +172,7 @@ export default function PaymentForm() {
           )}
         />
 
-        <FormField
+        {/* <FormField
           control={form.control}
           name="image"
           render={({ field }) => (
@@ -185,7 +189,7 @@ export default function PaymentForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
 
         <FormField
           control={form.control}

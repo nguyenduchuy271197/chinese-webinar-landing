@@ -10,7 +10,7 @@ export default function Speaker() {
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-[1fr_2fr] gap-16">
             <div className="rounded-full bg-auto relative aspect-[1/1] overflow-hidden">
               <Image
-                src="/speaker.jpg"
+                src="/Thay Bao Profile.jpg"
                 alt="Speaker"
                 fill
                 className="w-full h-full"
@@ -22,7 +22,7 @@ export default function Speaker() {
                 <p className="uppercase subtitle2 text-white">Giảng viên</p>
                 <div className="flex gap-8 justify-between items-center">
                   <div className="text-white font-bold">
-                    <h2 className="h3 font-bold md:h2">
+                    <h2 className="h2">
                       Thầy<HighlightWord>Hoàng Bảo</HighlightWord>
                     </h2>
                   </div>
@@ -120,52 +120,52 @@ export default function Speaker() {
 
               <ul className="space-y-4 mt-6">
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
                     <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     Thành thạo 3 ngôn ngữ: anh, trung, thái
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     BIên tập viên tiếng trung tại đài truyền hình VTV
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     Thạc Sĩ Ngôn Ngữ Trung tại Đại Học Mở tphcm
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     Kinh nghiệm dịch thuật đa dạng từ sách, phim, truyện,
                     game,...
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     gần 20 năm kinh nghiệm giảng dạy Tiếng Trung cho mọi đối
                     tượng
                   </p>
                 </li>
                 <li className="flex items-center gap-4 text-white text-xl">
-                  <div className="w-6 h-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
-                    <Check className="text-white w-4 h-4" />
+                  <div className="size-6 rounded-full bg-secondary shrink-0 flex justify-center items-center mt-1">
+                    <Check className="text-white size-4" />
                   </div>
-                  <p className="body2-semi md:subtitle2 uppercase">
+                  <p className="subtitle2 uppercase">
                     đam mê tìm tòi thêm các ngôn ngữ hàn, nhật, pháp, tây ban
                     nha
                   </p>
@@ -174,14 +174,14 @@ export default function Speaker() {
 
               <ul className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:text-lg lg:text-xl items-center max-w-xl">
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div className="body2-semi md:body1-semi">
+                  <div className="body1-semi">
                     <span className="text-black">Xây dựng nền</span>
                     <br />
                     <span>tảng gốc rễ</span>
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div className="body2-semi md:body1-semi">
+                  <div className="body1-semi">
                     <span className="text-black">
                       Luyện <br />
                       giao tiếp
@@ -191,14 +191,14 @@ export default function Speaker() {
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div className="body2-semi md:body1-semi">
+                  <div className="body1-semi">
                     <span className="text-black">Tiếng Trung</span>
                     <br />
                     <span className="text-black">HS-SV</span>
                   </div>
                 </li>
                 <li className="bg-white text-center font-bold rounded-full aspect-[1/1] flex items-center justify-center">
-                  <div className="body2-semi md:body1-semi">
+                  <div className="body1-semi">
                     <span className="text-black">Tiếng Trung</span>
                     <br />
                     <span className="text-black">đi làm</span>

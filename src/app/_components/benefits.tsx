@@ -125,7 +125,7 @@ export default function Benefits() {
     <section className="bg-neutral-100">
       <div className="container">
         <div className="space-y-12 py-20">
-          <div className="h3 font-bold md:h2">
+          <div className="h2">
             <h2 className="max-w-[750px]">
               Nếu chỉ với
               <HighlightWord>3 giờ</HighlightWord>
@@ -140,13 +140,13 @@ export default function Benefits() {
                   key={idx}
                   className="bg-white space-y-3 p-9 border rounded-md hover:drop-shadow-xl"
                 >
-                  <div className="text-primary p-3 rounded-md w-16 h-16 bg-red-100">
+                  <div className="text-primary p-3 rounded-md size-16 bg-red-100">
                     {item.icon}
                   </div>
-                  <h4 className="body2-semi md:subtitle2 text-gray-800 uppercase">
+                  <h4 className="subtitle2 text-gray-800 uppercase">
                     {item.title}
                   </h4>
-                  <p className="body3 md:body2-regular">{item.desc}</p>
+                  <p className="body2-regular">{item.desc}</p>
                 </li>
               ))}
             </ul>

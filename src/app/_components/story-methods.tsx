@@ -28,7 +28,7 @@ export default function StoryMethods() {
   return (
     <section>
       <div className="container">
-        <h2 className="h3 font-bold md:h2 w-[1000px] mb-11">
+        <h2 className="h2 md:w-[1000px] mb-11">
           Lột xác với phương pháp MST được thiết kế{" "}
           <span className="text-primary">riêng biệt</span> và
           <HighlightWord>duy nhất</HighlightWord>cho bạn
@@ -39,69 +39,65 @@ export default function StoryMethods() {
               <thead className="uppercase">
                 <tr className="font-bold text-left">
                   <th></th>
-                  <th className=" text-neutral-600 body2-semi md:subtitle2">
+                  <th className=" text-neutral-600 subtitle2">
                     Phương pháp truyền thống
                   </th>
-                  <th className="bg-[#008900] text-white border-white border rounded-t-sm px-8 py-4 body2-semi md:subtitle2">
-                    Phương pháp học 3h
+                  <th className="uppercase bg-[#008900] text-white border-white border rounded-t-sm px-8 py-4 subtitle2">
+                    Phương Pháp học MST
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {table.map((content, idx) => (
                   <tr key={idx} className="border-t-[1px]">
-                    <td className="body2-semi md:subtitle2 w-[160px]">
-                      {content.title}
-                    </td>
-                    <td className="body2-regular md:body1-regular">
-                      {content.traditional}
-                    </td>
-                    <td className="bg-[#008900] text-white body2-semi md:body1-semi px-8 py-4 border">
+                    <td className="subtitle2 w-[160px]">{content.title}</td>
+                    <td className="body1-regular">{content.traditional}</td>
+                    <td className="bg-[#008900] text-white body1-semi px-8 py-4 border">
                       {content.fast}
                     </td>
                   </tr>
                 ))}
 
                 <tr className="border-t-[1px]">
-                  <td className="body2-semi md:subtitle2 w-[160px]">Lâu dài</td>
-                  <td className="body2-regular md:body1-regular">Quên dần</td>
-                  <td className="bg-[#008900] text-white body2-semi md:body1-semi px-8 py-4 border rounded-b-sm">
+                  <td className="subtitle2 w-[160px]">Lâu dài</td>
+                  <td className="body1-regular">Quên dần</td>
+                  <td className="bg-[#008900] text-white body1-semi px-8 py-4 border rounded-b-sm">
                     Nhớ lâu
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <p className="body3 md:body2-regular">
+            <p className="body2-regular">
               93% mọi người học tiếng Trung theo các phương pháp truyền thống để
               tiết kiệm thời gian nhưng dễ quên, phải học đi học lại nhiều lần
               và tốn thời gian hơn.
             </p>
 
-            <p className="body3 md:body2-regular">
+            <p className="body2-regular">
               Với phương pháp 3H Học - Hiểu - Hành giúp bạn đầu tư thời gian
               hiệu quả và thông minh, dứt điểm ngay trong 1 lần học.
             </p>
 
             <div className="space-y-10">
-              <h3 className="body2-semi md:subtitle2">
+              <h3 className="subtitle2">
                 Nếu việc học vẫn chưa đâu vào đâu, bạn sẽ...
               </h3>
 
               <div className="relative">
                 <div className="grid grid-cols-2 rounded-md overflow-hidden">
-                  <div className="body2-semi md:subtitle2">
+                  <div className="subtitle2">
                     <p className="uppercase bg-[#D9EDD9] text-[#008900] py-5 pl-8">
                       Đi kiếm 45 triệu/tháng
                     </p>
                   </div>
                   <div>
-                    <p className="uppercase bg-red-100 text-red-500 py-5 text-right pr-8">
+                    <p className="subtitle2 uppercase bg-red-100 text-red-500 py-5 text-right pr-8">
                       Nhìn người khác thành công
                     </p>
                   </div>
                 </div>
-                <div className="bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
+                <div className="subtitle2 bg-black uppercase text-white rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-24 sm:flex items-center justify-center hidden">
                   <p>Hay</p>
                 </div>
               </div>

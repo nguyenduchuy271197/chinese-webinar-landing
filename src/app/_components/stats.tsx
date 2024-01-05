@@ -3,7 +3,7 @@ import StatCard from "./share/stat-card";
 export default function Stats() {
   const stats = [
     {
-      postfix: "3",
+      value: 3,
       title: "Giờ ứng dụng phương pháp 3H",
     },
     {
@@ -11,9 +11,9 @@ export default function Stats() {
       title: "Chuẩn giáo trình tiếng Trung",
     },
     {
-      value: 1,
-      postfix: "TR+",
-      title: "Followers",
+      value: 600,
+      postfix: "+",
+      title: "NGƯỜI TÌM VIỆC THÀNH CÔNG",
     },
     {
       value: 1268,
@@ -23,7 +23,7 @@ export default function Stats() {
   ];
   return (
     <div className="flex justify-center sm:block">
-      <ul className="grid grid-cols-4">
+      <ul className="grid grid-cols-2 lg:flex text-center gap-8 lg:flex-row lg:text-left">
         {stats.map((item, idx) => (
           <StatCard key={idx} {...item} />
         ))}

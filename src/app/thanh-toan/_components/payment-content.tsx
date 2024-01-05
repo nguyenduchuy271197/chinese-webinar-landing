@@ -1,5 +1,7 @@
+import HighlightWord from "@/components/highlight-word";
 import { Info, InfoDescription, InfoTitle } from "./share/info";
 import Image from "next/image";
+import { CalendarClock, Cast } from "lucide-react";
 
 const info = [
   {
@@ -23,39 +25,53 @@ const info = [
 ];
 export default function PaymentContent() {
   return (
-    <div>
-      <div className="pb-10">
-        <p>Giá vé</p>
-        <div className="flex items-end font-bold">
-          <h3 className="text-4xl text-secondary">100.000 VNĐ</h3>
-          <p>/ 1 vé</p>
-        </div>
-      </div>
+    <div className="flex flex-col justify-between gap-8">
+      <div className="space-y-[30px]">
+        <div className="space-y-4">
+          <div>
+            <p className="body2-semi">Buổi học</p>
+            <h4 className="subtitle1">
+              <HighlightWord>Ngừng học vẹt</HighlightWord>tiếng Trung với phương
+              pháp MST
+            </h4>
+          </div>
 
-      <div className="grid grid-cols-2 gap-8">
-        <div className="space-y-6">
-          <h3 className="font-bold">Thông tin thanh toán</h3>
+          <div className="space-y-2">
+            <span className="flex gap-2 body1-regular">
+              <CalendarClock />
+              02:00 PM - 06:00 PM, 22/01/2024
+            </span>
 
-          <div className="flex flex-col gap-6">
-            {info.map((infomation, idx) => (
-              <Info key={idx}>
-                <InfoTitle>{infomation.title}</InfoTitle>
-                <InfoDescription hasClipboard={infomation.hasClipboard}>
-                  {infomation.description}
-                </InfoDescription>
-              </Info>
-            ))}
+            <span className="flex gap-2 body1-regular">
+              <Cast />
+              Online qua Google Meet
+            </span>
           </div>
         </div>
 
+        <div className="border-neutral-500 border" />
+
         <div>
-          <Image src="/QR.png" alt="QR" width={253} height={307} />
+          <div className="flex justify-between">
+            <p className="body1-regular">Giá vé</p>
+
+            <h4 className="subtitle1 text-secondary">100.000 VNĐ</h4>
+          </div>
+          <div className="flex justify-between">
+            <p className="body1-regular">Số lượng</p>
+
+            <h4 className="subtitle1 text-secondary">1 vé</h4>
+          </div>
         </div>
       </div>
 
-      <p className="pt-10">
-        Nếu bạn gặp bất cứ vấn đề nào, hãy nhắn tin trực tiếp cho chúng tôi qua{" "}
-        <a href="#" className="underline text-primary">
+      <p className="body3">
+        Nếu bạn gặp bất cứ vấn đề nào, hãy điện thoại đến{" "}
+        <a href="#" className="text-primary underline">
+          (+84) 86 713 3779
+        </a>{" "}
+        hoặc nhắn tin trực tiếp cho chúng tôi qua{" "}
+        <a href="#" className="text-primary underline">
           Messenger
         </a>
         .

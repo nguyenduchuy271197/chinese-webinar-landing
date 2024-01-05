@@ -27,11 +27,11 @@ export default function Story() {
       <div className="container">
         <div className="space-y-8">
           <div className="space-y-2 text-center">
-            <h2 className="h3 font-bold md:h2">
+            <h2 className="h2">
               Khó càng thêm khó, làm sao<HighlightWord>vượt qua</HighlightWord>
             </h2>
 
-            <p className="body3 md:body2-regular">
+            <p className="body2-regular">
               Câu chuyện thực tế mà các bạn đang mắc kẹt hàng ngày, nhưng đã có
               người vượt qua dễ dàng
             </p>
@@ -49,14 +49,14 @@ export default function Story() {
                     <div className="size-4 rounded-full bg-primary shrink-0 flex justify-center items-center mt-1">
                       <X className="text-white size-3" />
                     </div>
-                    <p className="body2-regular md:body1-regular">{s.no}</p>
+                    <p className="body1-regular">{s.no}</p>
                   </div>
 
                   <div className="bg-[#D9EDD9] flex gap-4 p-6">
                     <div className="size-4 rounded-full bg-[#008900] shrink-0 flex justify-center items-center mt-1">
                       <Check className="text-white size-3" />
                     </div>
-                    <p className="body2-regular md:body1-regular">{s.yes}</p>
+                    <p className="body1-regular">{s.yes}</p>
                   </div>
                 </div>
               </li>
