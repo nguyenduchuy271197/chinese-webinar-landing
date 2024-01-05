@@ -20,7 +20,7 @@ export default function CTA() {
             </p>
           </div>
           <Button variant="secondary" size="lg" className="subtitle2">
-            Đăng ký ngay
+            Giữ vé ngay
           </Button>
         </div>
       </div>

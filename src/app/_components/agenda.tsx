@@ -4,30 +4,30 @@ import AgendaCards from "./share/agenda-cards";
 
 const curriculum = [
   {
-    time: "18:00 PM",
+    time: "14:00 PM",
     title: "Câu chuyện truyền cảm hứng",
     description:
       "Điều gì làm nên sự thành công của thầy Nguyễn Hoàng Bảo và bí kíp chưa bao giờ được bật mí",
   },
   {
-    time: "18:45 PM",
+    time: "14:45 PM",
     title: "MST & cách thành thạo mọi ngôn ngữ",
     description:
       "Cách sử dụng MST tối ưu để đạt hiệu quả cao hơn 90% người học",
   },
   {
-    time: "19:30 PM",
+    time: "15:30 PM",
     title: "Mini game",
     description:
       "Trò chơi nhỏ giữa giờ để khuấy động bầu không khí học tập sôi nổi và năng lượng",
   },
   {
-    time: "20:00 PM",
+    time: "16:00 PM",
     title: "Đi làm và những mẫu chuyện nhớ đời",
     description: "Những kinh nghiệm quý báu không phải ai cũng kể cho bạn nghe",
   },
   {
-    time: "20:30 PM",
+    time: "16:30 PM",
     title: "Bạn hỏi, anh Bảo đáp",
     description: "Giải đáp các thắc mắc và chia sẻ cảm nhận sau buổi học",
   },
@@ -48,7 +48,7 @@ export default function Agenda() {
               <div className="space-y-4">
                 <span className="flex gap-2 body1-regular">
                   <CalendarClock />
-                  02:00 PM - 06:00 PM, 22/01/2024
+                  14:00 - 17:00, 20/01/2024
                 </span>
 
                 <span className="flex gap-2 body1-regular">

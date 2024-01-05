@@ -1,8 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { useInViewStore } from "@/hooks/use-inview";
 import CountDown, { CountdownRenderProps, zeroPad } from "react-countdown";
 
 export default function StickyBar() {
+  const inView = useInViewStore((state) => state.inView);
+
   const renderer = ({
     days,
     hours,
@@ -26,6 +29,9 @@ export default function StickyBar() {
 
   const targetDate = new Date(Date.UTC(2024, 0, 1, -7, 0, 0));
   const timestamp = targetDate.getTime();
+
+  if (!inView) return null;
+
   return (
     <section className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full hidden lg:block z-50">
       <div className="container">

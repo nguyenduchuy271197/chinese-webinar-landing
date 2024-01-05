@@ -1,9 +1,27 @@
+"use client";
+
+import { useInViewStore } from "@/hooks/use-inview";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Footer() {
+  const hide = useInViewStore((state) => state.hide);
+  const show = useInViewStore((state) => state.show);
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      hide();
+    } else {
+      show();
+    }
+  }, [inView, hide, show]);
+
   return (
-    <section className="bg-neutral-900 text-white">
+    <section className="bg-neutral-900 text-white" ref={ref}>
       <div className="container">
         <div className="grid md:grid-cols-3 gap-8 py-20">
           <div className="space-y-10">

@@ -87,7 +87,7 @@ export default function StoryDream() {
                     <h3 className="line-through text-neutral-600 subtitle1">
                       7 triệu/ tháng
                     </h3>
-                    <p className="bg-secondary rounded-full size-[120px] text-center flex flex-col items-center justify-center text-white text-base/[18px] md:text-lg/[20px]">
+                    <p className="bg-secondary rounded-full size-[150px] text-center flex flex-col items-center justify-center text-white text-base/[18px] md:text-lg/[20px]">
                       Ấn chọn
                       <span className="uppercase font-bold text-2xl/[24px] md:text-[28px]/[28px]">
                         mức lương

@@ -23,15 +23,17 @@ function AgendaCard({ ordNum, time, title, description }: CurriculumCardProps) {
   });
   return (
     <li ref={cardRef} className="relative pl-8 sm:pl-16">
-      <div className="bg-secondary text-white space-y-4 py-8 px-6 rounded-md">
-        <div className="flex gap-4 items-end">
-          <h3 className="h2">{ordNum}</h3>
+      <div className="bg-secondary text-white py-8 px-6 rounded-md">
+        <div className="flex gap-4 items-baseline">
+          <h3 className="sm:text-5xl text-[40px] font-bold">{ordNum}</h3>
           <p className="body1-semi">{time}</p>
         </div>
 
-        <p className="h3">{title}</p>
+        <div className="space-y-3">
+          <p className="h3">{title}</p>
 
-        <p className="body2-regular">{description}</p>
+          <p className="body2-regular">{description}</p>
+        </div>
       </div>
       <motion.div
         className="absolute top-12 left-0 w-10 h-10 rounded-full bg-secondary -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center"

@@ -44,7 +44,7 @@ export default function Hero() {
                   {/* Giá mới */}
                   <h3 className="h2 text-secondary">100.000 VNĐ</h3>
                   {/* % giảm */}
-                  <div className=" text-primary font-bold flex items-end">
+                  <div className="text-primary font-bold flex items-baseline">
                     <ArrowDown className="mb-1 size-4 md:size-6" />
                     <span className="h2">33</span>
                     <span className="body1-semi">%</span>
