@@ -33,7 +33,7 @@ export default function StoryMethods() {
           <span className="text-primary">riêng biệt</span> và
           <HighlightWord>duy nhất</HighlightWord>cho bạn
         </h2>
-        <div className="flex flex-col-reverse md:grid md:grid-cols-[4fr_3fr] gap-20 sm:gap-8">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-[4fr_3fr] gap-20 sm:gap-28">
           <div className="flex flex-col gap-10">
             <table>
               <thead className="uppercase">
@@ -105,7 +105,7 @@ export default function StoryMethods() {
           </div>
 
           <div>
-            <Image src="/Diagram.png" alt="Diagram" width={1280} height={994} />
+            <Image src="/Diagram.png" alt="Diagram" width={445} height={512} />
           </div>
         </div>
       </div>
